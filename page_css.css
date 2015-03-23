@@ -1,0 +1,180 @@
+/*Page CSS*/
+
+
+h1
+{
+font-size:50px;
+text-align:center;
+color:white;
+font-family:across the stars;
+}
+
+/*titre du site : Jamais sans ma pomme*/
+h2{
+font-size: 60px;
+font-family: across the stars;
+text-align:center;
+color: #E8CC06;
+}
+
+/* slogan du site : So fresh, so french !*/
+h3{
+color: #E8CC06;
+font-size:30px;
+font-family: across the stars;
+text-align:center;
+}
+
+/*Style de fond du site */
+body{
+	background-attachment:fixed;
+}
+
+
+tbody{
+margin: auto;
+}
+
+/* style du tableau 3x3 */
+table,td{
+	border: 2px solid #331f1d;
+	margin-left:300px;
+}
+
+
+table{
+text-align: center;
+font-family: across the stars;
+}
+
+/*liens*/
+a{ 
+    color:#FF140C;
+    text-decoration:none;
+}
+
+
+a:hover{
+    color:#00FF00;
+}
+
+/* disposition des paragraphes */
+p{
+	display:inline-block;
+	font-family: across the stars;
+	font-size:20px;
+}
+
+/* définition dde la taille de images */
+img{
+	width:170px;
+	height:170px;
+}
+
+/* bandeau du haut */
+#header {
+position: relative;
+top: -20px;
+background-color:#00313B;
+overflow auto;
+background : linear-gradient(<20>, #00313B, white);
+border-top-left-radius: 20px;
+border-top-right-radius: 15px;
+color:white;
+}
+
+/*barre du menu */
+#barre {
+	height: 170px;
+	width: 269px;
+	background-color: #331f1d;
+	float:left;
+	margin-left: 0px;
+	font-family: across the stars;
+	border-radius:6px;
+}
+
+/*barre menu*/
+#barre1 {
+	height: 200px;
+	width: 1000px;
+	background-color:#331f1d;
+	float:left;
+	margin-left: 100px;
+	font-family: across the stars;
+	border-radius:6px;
+	font-size:30px;
+	color:#fbf1e0
+}
+
+#bottom{
+	width:200px;
+	height:200px;
+}
+
+/* boutons pour se connecter dans le bandeau du haut */
+#button{
+	position:relative;
+	height:50px;
+	width:120px;
+	background-color:#331f1d;
+	border-width:2px;
+	border-style:solid;
+	border-radius:6px;
+	margin-left:230px;
+	text-align:center;
+	font-family: across the stars;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+/*bandeau du bas avec mentions légales/Contact/Aide */
+#footer{
+    clear:both;
+	position: relative;
+	bottom: -20px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 75px;
+	background-color: #00313B;
+	font-family: across the stars;
+	color:#FF140C;
+	text-align: center;
+	margin-left: 6px;
+	margin : auto;
+}
+
+/*items dans le menu - barre */
+#liste{
+	color:#FF140C;
+	font-size: 13px;
+}
+
+
+#identite{
+display:inline-block;
+height:300px;
+width:300px;
+background-color:#fbf1e0;
+border-width:2px;
+border-style:solid;
+border-radius:6px;
+margin-left:4px;
+text-align:left;
+font-family: across the stars;	
+font-size:13px;
+}
+
+
+#trait{
+	border-top : 1px solid #000;
+	width : 500px;
+}
+
+
+.profil
+{
+width: 200px;
+height: 200px;
+}
+
