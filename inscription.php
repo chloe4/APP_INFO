@@ -32,7 +32,7 @@
                     <p style="color: #FF140C; font-size :16px">Se connecter </p> 
                 </div >
                 <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px"><a href="file:///C:/wamp/www/jsmp/page_principale.html">Accueil</a></p>
+                    <p style="color: #FF140C; font-size :16px"><a href="file:///C:/wamp/www/APP_INFO/page_principale.html">Accueil</a></p>
                 </div >
                 <div id="button"> 
                     <p style="color: #FF140C; font-size :16px">Mon panier </p> 
@@ -51,7 +51,7 @@
             <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
             vers la base de données-->
             <?php
-            include('C:\wamp\www\jsmp\config.php'); 
+            include('C:\wamp\www\APP_INFO\config.php'); 
             ?>
 
             <!--On définit tous les champs nécessaires à l'inscription-->
@@ -59,7 +59,7 @@
            
                 Nom : <input type="text" name="nom_u" /></br>
                 Prénom : <input type="text" name="prenom_u" /></br>
-                Année de naissance : <input type="date" name="date_naissance_u" /></br>
+                Année de naissance (Année/Mois/Jour): <input type="date" name="date_naissance_u" /></br>
                 Téléphone : <input type="int" name="telephone_u" /></br>
                 Pseudo : <input type="text" name="identifiant_u"/></br>
                 Mot de passe : <input type="password" name="mot_passe_u" /></br>
@@ -73,7 +73,7 @@
     
 
             <div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
-                <p><a href="file:///C:/wamp/www/jsmp/Contact.html">- Contact -</a> </p>
+                <p><a href="file:///C:/wamp/www/APP_INFO/Contact.html">- Contact -</a> </p>
                 <p>Mentions Legales - </p>
                 <p>Aide - </p>
             </div>
