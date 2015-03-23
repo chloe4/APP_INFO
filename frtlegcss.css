@@ -1,0 +1,97 @@
+#header {/*Bandeau du haut avec "se connecter" ect */
+
+	position: relative;
+	top: -20px;
+	background-color:#00313B;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 15px;
+	
+}
+
+#button{/*boutton pour se connecter ect dans le bandeau du haut*/
+position:relative;
+height:50px;
+width:120px;
+background-color:#331f1d;
+border-width:2px;
+border-style:solid;
+border-radius:6px;
+margin-left:230px;
+text-align:center;
+font-family: across the stars;	
+display: inline-block;
+
+}
+
+a{ /*liens*/
+    color:#FF140C;
+    text-decoration:none;
+}
+a:hover{
+    color:#00FF00;
+}
+
+#barre {/*barre menu*/
+height: 170px;
+width: 269px;
+background-color: #331f1d;
+float:left;
+margin-left: 0px;
+font-family: across the stars;
+border-radius:6px;
+}
+
+#barre2 {/*barre menu*/
+height: 250px;
+width: 1000px;
+background-color: #331f1d;
+float:left;
+margin-left: 0px;
+font-family: across the stars;
+border-radius:6px;
+
+}
+
+
+h1{/*titre la poire*/
+color:#E8CC06;
+font-size:50px;
+font-family: across the stars;
+text-align: center;
+
+}
+
+body{/*style du fond de la page*/
+background-attachment:fixed;
+}
+
+
+#liste1{/*items menus */
+color:#FF140C;
+font-size: 13px;
+font-family: across the stars;
+}
+#liste2{/*items pour fruits/légumes */
+color:#fbf1e0;
+font-size: 13px;
+font-family: across the stars;
+}
+
+p{/*disposition des paragraphes*/
+display:inline-block;}
+
+
+#footer{/*bande du bas avec mentions légales ect*/
+    clear:both;
+	position: relative;
+	bottom: -20px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 75px;
+	background-color: #00313B;
+	font-family: across the stars;
+	color:#FF140C;
+	text-align: center;
+	margin-left: 6px;
+}
+
