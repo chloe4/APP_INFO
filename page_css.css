@@ -231,5 +231,12 @@ margin-left:500px;
 }
 
 
+.logo {
+height : 100px;
+width : 100px;
+float : left;
+position :relatif;
+text-align:left;
+	}
 
 
