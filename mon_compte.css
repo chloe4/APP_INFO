@@ -78,3 +78,11 @@ font-size:13px;
 width: 200px;
 height: 200px;
 }
+
+.logo {
+height : 100px;
+width : 100px;
+float : left;
+position :relatif;
+text-align:left;
+	}

@@ -94,4 +94,10 @@ display:inline-block;}
 	text-align: center;
 	margin-left: 6px;
 }
-
+.logo {
+height : 100px;
+width : 100px;
+float : left;
+position :relatif;
+text-align:left;
+	}

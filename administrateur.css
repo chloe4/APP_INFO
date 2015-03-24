@@ -95,3 +95,10 @@ tbody
 	border-top : 1px solid #000;
 	width : 500px;
 }
+.logo {
+height : 100px;
+width : 100px;
+float : left;
+position :relatif;
+text-align:left;
+	}

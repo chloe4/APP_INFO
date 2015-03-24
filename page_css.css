@@ -239,4 +239,12 @@ position :relatif;
 text-align:left;
 	}
 
+	.logo {
+height : 100px;
+width : 100px;
+float : left;
+position :relatif;
+text-align:left;
+	}
+
 
