@@ -232,6 +232,14 @@ img{
 	width: 200px;
 	height: 200px;
 }
+.logo {
+background-color:black;
+height:100px;
+width:100px;
+position:relatif;
+margin-top: 2Opx;
+	}
+
 
 <<<<<<< Updated upstream
 
