@@ -233,11 +233,13 @@ img{
 	height: 200px;
 }
 .logo {
-background-color:black;
-height:100px;
-width:100px;
-position:relatif;
-margin-top: 2Opx;
+height: 100px;
+width: 100px;
+background-color: #331f1d;
+float:right;
+margin-left: 0px;
+font-family: across the stars;
+border-radius:6px;
 	}
 
 
