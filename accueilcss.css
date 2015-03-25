@@ -1,12 +1,18 @@
 
 #header {/*Bandeau du haut avec "se connecter" ect */
+clear:both;
 position: relative;
-top: -20px;
+bottom: -20px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+height: 75px;
 background-color: #00313B;
-border-top-left-radius: 20px;
-border-top-right-radius: 15px;
-}
+font-family: across the stars;
+color:#FF140C;
+text-align: center;
+margin-left: 6px;
 
+}
 #menu-deroulant, #menu-deroulant ul {
     padding: 0;
     margin: 0;
@@ -14,7 +20,7 @@ border-top-right-radius: 15px;
 }
 #menu-deroulant {
 /* on centre le menu dans la page */
-    text-align: center;
+    text-align: right;
 }
 #menu-deroulant li {
 /* on place les liens du menu horizontalement */
@@ -25,9 +31,11 @@ border-top-right-radius: 15px;
     display: inherit;
 }
 #menu-deroulant a {
+	font-size: 20px;
+font-family: across the stars;
     text-decoration: none;
     display: block;
-	color:#000;
+	color:#FF140C;
 }
 #menu-deroulant ul {
     position: absolute;
@@ -109,6 +117,8 @@ display: inline-block;
 
 
 #barre {/*barre menu*/
+
+position: relative;
 height: 170px;
 width: 269px;
 background-color: #331f1d;
@@ -145,11 +155,3 @@ color:#FF140C;
 text-align: center;
 margin-left: 6px;
 }
-
-.logo {
-height : 100px;
-width : 100px;
-float : left;
-position :relatif;
-text-align:left;
-    }
