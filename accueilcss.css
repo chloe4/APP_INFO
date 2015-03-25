@@ -1,0 +1,157 @@
+
+#header {/*Bandeau du haut avec "se connecter" ect */
+clear:both;
+position: relative;
+bottom: -20px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+height: 75px;
+background-color: #00313B;
+font-family: across the stars;
+color:#FF140C;
+text-align: center;
+margin-left: 6px;
+
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: right;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+	font-size: 20px;
+font-family: across the stars;
+    text-decoration: none;
+    display: block;
+	color:#FF140C;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+a{ /*liens*/
+color:#FF140C;
+text-decoration:none;
+}
+
+
+a:hover{
+color:#00FF00;
+}
+
+
+h2{/* titre jamais sans ma pomme*/
+font-size: 60px;
+font-family: across the stars;
+text-align:center;
+color: #E8CC06;
+}
+
+
+h3{/* titre so fresh so french*/
+color: #E8CC06;
+font-size:40px;
+font-family: across the stars;
+text-align:center;
+}
+
+
+body{/*style du fond de la page*/
+background-attachment:fixed;
+}
+
+
+#liste{/*items dans le menu / barre */
+color:#FF140C;
+font-size: 13px;
+}
+
+
+img{/* la taille des images*/
+width:170px;
+height:170px;
+}
+
+
+table,td{/* style du tableau3*3 */
+border: 2px solid #331f1d;
+margin-left:300px;
+}
+
+
+p{/*disposition des paragraphes*/
+display:inline-block;}
+
+
+#button{/*boutton pour se connecter ect dans le bandeau du haut*/
+position:relative;
+height:50px;
+width:120px;
+background-color:#331f1d;
+border-width:2px;
+border-style:solid;
+border-radius:6px;
+margin-left:230px;
+text-align:center;
+font-family: across the stars;
+display: inline-block;
+}
+
+
+#barre {/*barre menu*/
+
+position: relative;
+height: 170px;
+width: 269px;
+background-color: #331f1d;
+float:left;
+margin-left: 0px;
+font-family: across the stars;
+border-radius:6px;
+}
+
+
+#barre1 {/*barre menu*/
+height: 200px;
+width: 1000px;
+background-color:#331f1d;
+float:left;
+margin-left: 100px;
+font-family: across the stars;
+border-radius:6px;
+font-size:30px;
+color:#fbf1e0
+}
+
+
+#footer{/*bande du bas avec mentions légales ect*/
+clear:both;
+position: relative;
+bottom: -20px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+height: 75px;
+background-color: #00313B;
+font-family: across the stars;
+color:#FF140C;
+text-align: center;
+margin-left: 6px;
+}
