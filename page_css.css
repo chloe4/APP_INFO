@@ -232,13 +232,16 @@ img{
 	width: 200px;
 	height: 200px;
 }
-
-
 .logo {
-	height : 100px;
-	width : 100px;
-	float : left;
-	position :relatif;
-	text-align:left;
-}
+background-color:black;
+height:100px;
+width:100px;
+position:relatif;
+margin-top: 2Opx;
+	}
 
+
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes

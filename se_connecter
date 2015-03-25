@@ -1,3 +1,5 @@
+se_connecter.php
+
 <!DOCTYPE html>
 
     <html>
@@ -55,7 +57,7 @@
             ?>
 
             <!--On définit tous les champs nécessaires à l'inscription-->
-            <form action="page_principale_test.php" method="post">
+            <form action="inscription.php" method="post">
            
                 Nom : <input type="text" name="nom_u" /></br>
                 Prénom : <input type="text" name="prenom_u" /></br>

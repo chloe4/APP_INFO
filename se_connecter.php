@@ -54,20 +54,16 @@
             include('C:\wamp\www\APP_INFO\config.php'); 
             ?>
 
-            <!--On définit tous les champs nécessaires à l'inscription-->
-            <form action="page_principale_test.php" method="post">
+            <!--On définit tous les champs nécessaires à la connexion-->
+            <form action="se_connecter.php" method="post">
            
-                Nom : <input type="text" name="nom_u" /></br>
-                Prénom : <input type="text" name="prenom_u" /></br>
-                Année de naissance (Année/Mois/Jour): <input type="date" name="date_naissance_u" /></br>
-                Téléphone : <input type="int" name="telephone_u" /></br>
                 Pseudo : <input type="text" name="identifiant_u"/></br>
+
                 Mot de passe : <input type="password" name="mot_passe_u" /></br>
-                Mot de passe confirmation: <input type="password" name="motdepasse2" /></br>
-                Email : <input type="email" name="email_u" /></br>
+               
 
                 <!--On définit un bouton permettant d'envoyer les informations-->
-                <input type="submit" name="envoyer" Value="S'inscrire"/></br>
+                <input type="submit" name="envoyer" Value="Se connecter"/></br>
             
             </form>
     
