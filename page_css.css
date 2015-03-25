@@ -1,28 +1,28 @@
 /*Page CSS*/
 
 
-h1
-{
-font-size:50px;
-text-align:center;
-color:white;
-font-family:across the stars;
+/*Le site*/
+h1{
+	font-size:50px;
+	text-align:center;
+	color:white;
+	font-family:across the stars;
 }
 
 /*titre du site : Jamais sans ma pomme*/
 h2{
-font-size: 60px;
-font-family: across the stars;
-text-align:center;
-color: #E8CC06;
+	font-size: 60px;
+	font-family: across the stars;
+	text-align:center;
+	color: #E8CC06;
 }
 
 /* slogan du site : So fresh, so french !*/
 h3{
-color: #E8CC06;
-font-size:30px;
-font-family: across the stars;
-text-align:center;
+	color: #E8CC06;
+	font-size:30px;
+	font-family: across the stars;
+	text-align:center;
 }
 
 /*Style de fond du site */
@@ -30,9 +30,9 @@ body{
 	background-attachment:fixed;
 }
 
-
+/*Le corps du tableau du corps du site !*/
 tbody{
-margin: auto;
+	margin: auto;
 }
 
 /* style du tableau 3x3 */
@@ -41,10 +41,10 @@ table,td{
 	margin-left:300px;
 }
 
-
+/*stle du tableau*/
 table{
-text-align: center;
-font-family: across the stars;
+	text-align: center;
+	font-family: across the stars;
 }
 
 /*liens*/
@@ -53,7 +53,7 @@ a{
     text-decoration:none;
 }
 
-
+/*liens sur lesquels on passe la souris*/
 a:hover{
     color:#00FF00;
 }
@@ -73,14 +73,14 @@ img{
 
 /* bandeau du haut */
 #header {
-position: relative;
-top: -20px;
-background-color:#00313B;
-overflow auto;
-background : linear-gradient(<20>, #00313B, white);
-border-top-left-radius: 20px;
-border-top-right-radius: 15px;
-color:white;
+	position: relative;
+	top: -20px;
+	background-color:#00313B;
+	overflow auto;
+	background : linear-gradient(<20>, #00313B, white);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 15px;
+	color:white;
 }
 
 /*barre du menu */
@@ -107,6 +107,7 @@ color:white;
 	color:#fbf1e0
 }
 
+
 #bottom{
 	width:200px;
 	height:200px;
@@ -128,6 +129,17 @@ color:white;
 	margin-top: 30px;
 }
 
+
+#description {
+	position:relatif;
+	margin-top:100px;
+	margin-left:350px;
+	display:inline-block;
+	font-family: across the stars;
+}
+
+
+
 /*bandeau du bas avec mentions légales/Contact/Aide */
 #footer{
     clear:both;
@@ -144,107 +156,89 @@ color:white;
 	margin : auto;
 }
 
+/*Definition de la taille et position des images de fruits*/
+#fruit{
+	margin-top:10px;
+	margin-left:500px;
+	width:500px;
+	height:500px;
+}
+
+/*Définition de la fiche d'identité*/
+#identite{
+	display:inline-block;
+	height:300px;
+	width:300px;
+	background-color:#fbf1e0;
+	border-width:2px;
+	border-style:solid;
+	border-radius:6px;
+	margin-left:4px;
+	text-align:left;
+	font-family: across the stars;	
+	font-size:13px;
+}
+
 /*items dans le menu - barre */
 #liste{
 	color:#FF140C;
 	font-size: 13px;
 }
 
-
-#identite{
-display:inline-block;
-height:300px;
-width:300px;
-background-color:#fbf1e0;
-border-width:2px;
-border-style:solid;
-border-radius:6px;
-margin-left:4px;
-text-align:left;
-font-family: across the stars;	
-font-size:13px;
+#mesproducteursfavoris {
+	position:relatif;
+	height: 230px;
+	width: 250px;
+	background-color:#331f1d;
+	float:right;
+	font-family: across the stars;
+	text-align:center;
+	margin-left:500px;
 }
 
+/*Définition de l'image représentant les producteurs*/
+#producteur{
+	margin-top:10px;
+	margin-left:270px;
+	margin-left:500px;
+}
 
+/*Definition du trair delimitant deux parties*/
 #trait{
 	border-top : 1px solid #000;
 	width : 500px;
 }
 
 
-.profil
-{
-width: 200px;
-height: 200px;
-}
-
-.formulaire {
-margin-left:300px;
-
-}
-
 .Fairemescourses {
-position:relatif;
-height: 50px;
-width: 250px;
-background-color: #331f1d;
-float:right;
-margin-top: -700px;
-font-family: across the stars;
-text-align:center;
-margin-left:-20px;
-
+	position:relatif;
+	height: 50px;
+	width: 250px;
+	background-color: #331f1d;
+	float:right;
+	margin-top: -700px;
+	font-family: across the stars;
+	text-align:center;
+	margin-left:-20px;
 }
 
-#description {
-position:relatif;
-margin-top:100px;
-margin-left:350px;
-display:inline-block;
-font-family: across the stars;
-
+/*Definition de la position du formulaire*/
+.formulaire {
+	margin-left:300px;
 }
 
-#mesproducteursfavoris {
-
-position:relatif;
-height: 230px;
-width: 250px;
-background-color:#331f1d;
-float:right;
-font-family: across the stars;
-text-align:center;
-margin-left:500px;
-}
-
- #fruit{
-margin-top:10px;
-margin-left:500px;
-width:500px;
-height:500px;
-}
-
-#producteur{
-margin-top:10px;
-margin-left:270px;
-margin-left:500px;
+/*Definir la photo de profil*/
+.profil{
+	width: 200px;
+	height: 200px;
 }
 
 
 .logo {
-height : 100px;
-width : 100px;
-float : left;
-position :relatif;
-text-align:left;
-	}
-
-	.logo {
-height : 100px;
-width : 100px;
-float : left;
-position :relatif;
-text-align:left;
-	}
-
+	height : 100px;
+	width : 100px;
+	float : left;
+	position :relatif;
+	text-align:left;
+}
 
