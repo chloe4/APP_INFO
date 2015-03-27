@@ -5,9 +5,9 @@
 
     <body>
     <form action="test2.php" method="post">
-    Votre login : <input type="text" name="nom_u">
+    Votre login : <input type="text" name="pseudo">
     <br />
-    Votre mot de passe : <input type="password" name="mot_passe_u"><br />
+    Votre mot de passe : <input type="password" name="motdepasse"><br />
     <input type="submit" value="Connexion">
     </form>
 
