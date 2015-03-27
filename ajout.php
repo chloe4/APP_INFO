@@ -52,7 +52,7 @@
            
                 Article : <input type="text" name="article_a" /></br>
                 Variété : <input type="text" name="varietes_a" /></br>
-                Nombre d'articles proposés : <input type="int" name="nombred'articles_a" /></br>
+                Nombre d'articles proposés : <input type="int" name="nb_article_a" /></br>
                 Prix : <input type="int" name="prix_a" /></br>
                 Durée de vie : <input type="int" name="duree_vie_a" /></br>
                  
