@@ -16,7 +16,7 @@
 
 
 <<?php 
-echo "bonjour $_POST["identifiant_u"]";
+echo "bonjour";
 
  ?>
 

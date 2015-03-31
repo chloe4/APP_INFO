@@ -3,16 +3,23 @@
 <?php
 
     //On test si nos variables sont bien définies
-    if (isset($_POST['pseudo']) && isset($_POST['motdepasse'])) {
+    if (isset($_POST["pseudo"]) && isset($_POST["motdepasse"])) {
 
         //On insère les données dans un tableau
         
 
         $db = new PDO("mysql:host=127.0.0.1;dbname=login","root","");
-        $request = $db->prepare("SELECT `pseudo`,`motdepasse` FROM `membres` WHERE `pseudo`=mysql_escape_string('$pseudo') AND `motdepasse`=mysql_escape_string('motdepasse') ");
+        $request = $db->prepare("SELECT `motdepasse` FROM `membres` WHERE `pseudo`=mysql_escape_string('$pseudo')");
     
+            $data = mysql_fetch_assoc($request);
+
             // on vérifie les informations du formulaire, à savoir si le pseudo saisi est bien un pseudo autorisé, de même pour le mot de passe
-            if ('pseudo' == $_POST['pseudo'] && 'motdepasse' == $_POST['motdepasse']) {
+            if ($data['motdepasse']!= $_POST['motdepasse']) {
+                echo "FAUX !";
+                include ('test.php');
+                exit;
+            }
+            else{
             // dans ce cas, tout est ok, on peut démarrer notre session
 
             // on la démarre :)
@@ -22,15 +29,15 @@
             $_SESSION['motdepasse'] = $_POST['motdepasse'];
 
             // on redirige notre visiteur vers une page de notre section membre
-            header ('location: test3.php');
+            echo 'vous êtes bien logué';
             }
-            else {
-            // Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
-            echo 'OUPS';
-            //'<body onLoad="alert(\'Membre non reconnu...\')">';
-            // puis on le redirige vers la page d'accueil
-            //echo '<meta http-equiv="refresh" content="0;URL=page_principale_test.php">';
-            }}
+    }
+    else {
+        echo 'vous avez oublié un champ';
+        include ('test.php');
+        exit;
+    }
+
 
 
    
