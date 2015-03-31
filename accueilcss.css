@@ -17,11 +17,10 @@ margin-left: 6px;
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-top:-70px;
+    margin-left:100x;
 }
-#menu-deroulant {
-/* on centre le menu dans la page */
-    text-align: right;
-}
+
 #menu-deroulant li {
 /* on place les liens du menu horizontalement */
     display: inline-block;
