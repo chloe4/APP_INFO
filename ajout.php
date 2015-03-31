@@ -6,7 +6,7 @@
 
             <!--On associe à la page html la page CSS-->
             <link type="text/css" rel="stylesheet" href="page_css.css"/> 
-            <title> S'inscrire </title>
+            <title> Ajout de fruits et de légumes </title>
             <meta charset="utf-8" />
 
         </head>
