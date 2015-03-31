@@ -2,7 +2,7 @@
 session_start();
 
 //print_r($_POST); 
-//Vérification si nom, prenom, datedenaissance, adresse, telephone, pseudo, mot de passe et email existe !
+//Vérification si article, variété, nombre d'articles, prix et durée de vie existe !
 	if (isset($_POST["article_a"])&&
 		isset($_POST["varietes_a"])&&
 		isset($_POST["nb_article_a"])&&
