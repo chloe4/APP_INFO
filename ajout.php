@@ -48,13 +48,13 @@
             ?>
 
             <!--On définit tous les champs nécessaires à l'ajout de fruits et de légumes-->
-            <form action="ajoutfruits&légumes.php" method="post">
+            <form action="AccueilLilice.html" method="post">
            
                 Article : <input type="text" name="article_a" /></br>
                 Variété : <input type="text" name="varietes_a" /></br>
                 Nombre d'articles proposés : <input type="int" name="nb_article_a" /></br>
-                Prix : <input type="int" name="prix_a" /></br>
-                Durée de vie : <input type="int" name="duree_vie_a" /></br>
+                Prix (euros) : <input type="int" name="prix_a" /></br>
+                Durée de vie (jours) : <input type="int" name="duree_vie_a" /></br>
                  
 
                 <!--On définit un bouton permettant d'envoyer les informations-->
