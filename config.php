@@ -27,7 +27,7 @@ session_start();
 
 		// Si erreur, affiche l'erreur - permet "d'attraper" l'erreur
 		try {
-			echo "b";
+			// echo "b"; (permet de faire des tests)
 			$request->execute(array(
 				"nom_u" => $_POST["nom_u"],
 				"prenom_u" => $_POST["prenom_u"],

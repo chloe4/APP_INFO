@@ -1,5 +1,3 @@
-
-
 <?php
 
     //On test si nos variables sont bien définies
@@ -9,15 +7,27 @@
         
 
         $db = new PDO("mysql:host=127.0.0.1;dbname=login","root","");
-        $request = $db->prepare("SELECT `motdepasse` FROM `membres` WHERE `pseudo`= {$_POST['pseudo']}");
+        $sql = "SELECT `motdepasse` FROM `membres` WHERE `pseudo`= {$_POST['pseudo']}";
+        $request = $db->prepare($sql);
 
         $request->execute();
-        $dt = mysql_fetch_object($request);
-        print_r($dt);
+ 
+        var_dump($request->execute());
+
+
+        $data = mysql_fetch_assoc($request);
+        
+
+        // on fait une boucle qui va faire un tour pour chaque enregistrement
+       
+       
+        // on affiche les informations de l'enregistrement en cours
+         
+
+
             // on vérifie les informations du formulaire, à savoir si le pseudo saisi est bien un pseudo autorisé, de même pour le mot de passe
-            if ($dt!= $_POST['motdepasse']) {
+            if ($data['nom']!= $_POST['motdepasse']) {
                 echo "FAUX !";
-                
             }
             else{
             // dans ce cas, tout est ok, on peut démarrer notre session
@@ -32,4 +42,3 @@
             echo 'vous êtes bien logué';
             }
     }
-   
