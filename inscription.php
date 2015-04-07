@@ -55,7 +55,7 @@
             ?>
 
             <!--On définit tous les champs nécessaires à l'inscription-->
-            <form action="page_principale_test.php" method="post">
+            <form action="AccueilLilice.html" method="post">
            
                 Nom : <input type="text" name="nom_u" /></br>
                 Prénom : <input type="text" name="prenom_u" /></br>
