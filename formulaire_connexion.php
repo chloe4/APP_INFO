@@ -17,24 +17,18 @@
             <!--On définit les boutons d'en-tête de la page-->
             <div id="header"> 
                 <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px">Se connecter </p> 
-                </div >
+                    <p style="color: #FF140C; font-size :16px">Se connecter </p> </div >
                 <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px"><a href="page_principale.html">Accueil</a></p>
-                </div >
+                    <p style="color: #FF140C; font-size :16px"><a href="page_principale.html">Accueil</a></p> </div >
                 <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px">Mon panier </p> 
-                </div >
+                    <p style="color: #FF140C; font-size :16px">Mon panier </p> </div >
 
                 <!--Titre de la page-->
                 <h2> Bienvenue sur "Jamais sans ma pomme"<br> 
-                    Inscrivez vous</br>
-                </h2>
-                <h3> So fresh, so french
-                </h3>
+                    Inscrivez vous</br> </h2>
+                <h3><em> So fresh, so french ! </em></h3>
             </div>
 
-            
             <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
             vers la base de données-->
             <?php
@@ -49,13 +43,11 @@
                 <input type="submit" name="envoyer" Value="Se connecter"/></br>
             </form>
     
-
             <div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
                 <p><a href="Contact.html">- Contact -</a> </p>
                 <p><a href="mentions_legales.html">Mentions Legales - </p>
                 <p>Aide - </p>
             </div>
-
 
         </body>
 
