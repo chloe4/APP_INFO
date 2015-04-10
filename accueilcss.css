@@ -18,7 +18,7 @@ margin-left: 6px;
     margin: 0;
     list-style: none;
     margin-top:-70px;
-    margin-left:100x;
+    margin-left:100px;
 }
 
 #menu-deroulant li {
@@ -34,7 +34,7 @@ margin-left: 6px;
 font-family: across the stars;
     text-decoration: none;
     display: block;
-	color:#FF140C;
+	color:#E8CC06;
 }
 #menu-deroulant ul {
     position: absolute;
@@ -47,13 +47,13 @@ font-family: across the stars;
     left: auto;
 }
 a{ /*liens*/
-color:#FF140C;
+color:#E8CC06;
 text-decoration:none;
 }
 
 
 a:hover{
-color:#00FF00;
+color:#E8CC06;
 }
 
 
@@ -100,25 +100,13 @@ p{/*disposition des paragraphes*/
 display:inline-block;}
 
 
-#button{/*boutton pour se connecter ect dans le bandeau du haut*/
-position:relative;
-height:50px;
-width:120px;
-background-color:#331f1d;
-border-width:2px;
-border-style:solid;
-border-radius:6px;
-margin-left:230px;
-text-align:center;
-font-family: across the stars;
-display: inline-block;
-}
+
 
 
 #barre {/*barre menu*/
 
 position: relative;
-height: 170px;
+height: 300px;
 width: 269px;
 background-color: #331f1d;
 float:left;

@@ -52,6 +52,7 @@ if($count >=1){
 <!DOCTYPE html>
 <html>
 <head>
+	<link type="text/css" rel="stylesheet" href="accueilcss.css"/>
 	<title> Moteur de Recherche </title>
 	<meta charset="UTF-8"/>
 </head>
