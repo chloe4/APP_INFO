@@ -66,3 +66,28 @@ font-size:40px;
 font-family: across the stars;
 text-align:center;
 }
+
+img{/* la taille des images*/
+width:170px;
+height:170px;
+}
+
+
+table,td{/* style du tableau3*3 */
+border: 2px solid #331f1d;
+margin-left:300px;
+}
+
+#footer{/*bande du bas avec mentions légales ect*/
+clear:both;
+position: relative;
+bottom: -20px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+height: 75px;
+background-color: #00313B;
+font-family: across the stars;
+color:#FF140C;
+text-align: center;
+margin-left: 6px;
+}
