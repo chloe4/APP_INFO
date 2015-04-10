@@ -71,6 +71,15 @@ img{
 	height:170px;
 }
 
+#barre3{
+-webkit-border-radius:100px;
+	-moz-border-radius:100px;
+background-color: #9a4;
+float:left;
+margin-left: 10px;
+font-family: across the stars;
+border-radius:6px;
+}
 /* bandeau du haut */
 #header {
 	position: relative;
@@ -184,7 +193,11 @@ img{
 	color:#FF140C;
 	font-size: 13px;
 }
+#liste4{
+	color:#FF140C;
+	font-size: 13px;
 
+}
 #mesproducteursfavoris {
 	position:relatif;
 	height: 230px;
