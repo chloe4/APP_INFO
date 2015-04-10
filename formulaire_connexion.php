@@ -17,7 +17,7 @@
             <!--On définit les boutons d'en-tête de la page-->
             <div id="header"> 
                 <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px">Se connecter </p> </div >
+                    <p style="color: #000000; font-size :16px">Se connecter </p> </div >
                 <div id="button"> 
                     <p style="color: #FF140C; font-size :16px"><a href="page_principale.html">Accueil</a></p> </div >
                 <div id="button"> 
