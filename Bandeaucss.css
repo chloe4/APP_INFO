@@ -6,6 +6,8 @@
 }
 #menu > li,
 #menu > li li {
+	font-family : across the stars;
+	font-size:12px ;
 	position: relative;
 	display:inline-block;
 	width: 110px;
