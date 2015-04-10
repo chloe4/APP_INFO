@@ -38,7 +38,7 @@
             <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
             vers la base de données-->
             <?php
-            include('connect.php'); 
+            include('connexion_php.php'); 
             ?>
 
             <!--On définit tous les champs nécessaires à la connexion-->
@@ -51,8 +51,8 @@
     
 
             <div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
-                <p><a href="file:///C:/wamp/www/APP_INFO/Contact.html">- Contact -</a> </p>
-                <p>Mentions Legales - </p>
+                <p><a href="Contact.html">- Contact -</a> </p>
+                <p><a href="mentions_legales.html">Mentions Legales - </p>
                 <p>Aide - </p>
             </div>
 
