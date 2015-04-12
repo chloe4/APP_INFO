@@ -5,7 +5,7 @@
 		
 
 		<head>
-			<link type="text/css" rel="stylesheet" href="page_css.css"/>
+			<link type="text/css" rel="stylesheet" href="Bandeaucss.css"/>
 			<title> Jamais sans ma pomme </title> <!-- titre de l'onglet de la page -->
 			<meta charset="utf-8"/>
 		</head>
@@ -21,28 +21,41 @@ echo "bonjour $_POST["identifiant_u"]";
  ?>
 
 
-			<div id="header"> <!--Barre en haut du site -->
-				<div id="button"> <p style="color:#FF140C; font-size :16px">Se connecter </p> </div >
-				<div id="button"> <p style="color:#FF140C; font-size:16px"><a href="inscription.php">S'inscrire</a></p> </div >
-				<div id="button"> <p style="color:#FF140C; font-size:16px">Mon panier </p> </div >
+			<ul id="menu">
+	<li><a href="#">Accueil</a>
 		
+	</li>
+	<li><a href="#">Calendrier</a>
+		
+	</li>
+	<li><a href="#">Nos producteurs</a>
+		
+	</li><li><a href="#">Des infos !</a>
+		<ul>
+			
+			<li><a href="#">Qui sommes-nous</a></li>
+			<li><a href="#">Contact</a></li>		
+		</ul>
+	</li><li><a href="#">Mon panier</a>
+		<ul>
+			<li><a href="#">En cours</a></li>
+			<li><a href="#">Avant</a></li>	
+		</ul>
+	</li>
+	</li><li><a href="#">Rechercher</a>	
+	</li>
+	</li><li><a href="#">Nous rejoindre !</a>
+		<ul>
+			<li><a href="#">S'inscire</a></li>
+			<li><a href="#">Se connecter</a></li>			
+		</ul>
+	</li>
+</ul>
 				<h2>Jamais sans ma pomme </h2> <!-- titres de la page dans la bande-->
 				<h3>So fresh , so French! </h3>
 
 				
 		
-			</div>
-		
-			<div id="barre">
-				<div id="liste"> <!--liste à gauche / une sorte de menu général-->
-					<ul>
-						<li>Accueil</li>
-						<li>Fruits & Legumes</li>
-						<li><a title="fruits et légumes" href="http://www.fruits-legumes.org/">Le calendrier des fruits et legumes</a></li>
-						<li>Forum</li>
-						<li>Qui sommes-nous ?</li>
-					</ul>
-				</div>
 			</div>
 		
 
