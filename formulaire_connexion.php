@@ -22,7 +22,7 @@
     <li><a href="http://www.mangerbouger.fr/IMG/pdf/inpes_manger_bouger_pdf_produits_saison.pdf">Calendrier</a>
         
     </li>
-    <li><a href="#">Nos producteurs</a>
+    <li><a href="http://localhost/APP_INFO/fairemescourses.html">Nos producteurs</a>
         
     </li><li><a href="#">Des infos !</a>
         <ul>
@@ -67,8 +67,8 @@
             </form>
     
             <div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
-                <p><a href="Contact.html">- Contact -</a> </p>
-                <p><a href="mentions_legales.html">Mentions Legales - </p>
+            
+                <p><a href="mentionslegales.html">- Mentions Legales - </p> 
                 
             </div>
 
