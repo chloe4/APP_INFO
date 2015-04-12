@@ -5,7 +5,7 @@
         <head>
 
             <!--On associe à la page html la page CSS-->
-            <link type="text/css" rel="stylesheet" href="page_css.css"/> 
+            <link type="text/css" rel="stylesheet" href="Bandeaucss.css"/> 
             <title> Ajout de fruits et de légumes </title>
             <meta charset="utf-8" />
 
@@ -14,23 +14,40 @@
 
         <body>
         <!--On met un fond à notre page-->
-        <body background="http://www.castorama.fr/images/products/h/h_645105.jpg"/> 
-
-
+                <body background="http://images99.i.m.pic.centerblog.net/v8v99xxn.jpg"/>
+<ul id="menu">
+    <li><a href="http://localhost/APP_INFO/Bandeau.html">Accueil</a>
+        
+    </li>
+    <li><a href="#">Calendrier</a>
+        
+    </li>
+    <li><a href="#">Nos producteurs</a>
+        
+    </li><li><a href="#">Des infos !</a>
+        <ul>
+            
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#">Contact</a></li>        
+        </ul>
+    </li><li><a href="#">Mon panier</a>
+        <ul>
+            <li><a href="#">En cours</a></li>
+            <li><a href="#">Avant</a></li>  
+        </ul>
+    </li>
+    </li><li><a href="#">Rechercher</a> 
+    </li>
+    </li><li><a href="#">Nous rejoindre !</a>
+        <ul>
+            <li><a href="#">S'inscire</a></li>
+            <li><a href="#">Se connecter</a></li>           
+        </ul>
+    </li>
+</ul>
 
             <!--On définit les boutons d'en-tête de la page-->
-            <div id="header"> 
             
-                <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px">Se connecter </p> 
-                </div >
-                <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px"><a href="file:///C:/wamp/www/APP_INFO/page_principale.html">Accueil</a></p>
-                </div >
-                <div id="button"> 
-                    <p style="color: #FF140C; font-size :16px">Mon panier </p> 
-                </div >
-
                 <!--Titre de la page-->
                 <h2> Bienvenue sur "Jamais sans ma pomme"<br> 
                     Inscrivez vous</br>
@@ -66,7 +83,7 @@
             <div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
                 <p><a href="file:///C:/wamp/www/APP_INFO/Contact.html">- Contact -</a> </p>
                 <p>Mentions Legales - </p>
-                <p>Aide - </p>
+               
             </div>
 
 
