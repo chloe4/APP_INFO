@@ -43,7 +43,7 @@ echo "bonjour $_POST["identifiant_u"]";
 		</ul>
 	</li><li><a href="#">Mon panier</a>
 		<ul>
-			<li><a href="#">En cours</a></li>
+			<li><a href="http://localhost/APP_INFO/panier.php">En cours</a></li>
 			<li><a href="#">Avant</a></li>	
 		</ul>
 	</li>
