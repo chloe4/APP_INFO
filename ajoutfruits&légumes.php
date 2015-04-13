@@ -5,7 +5,7 @@
 		
 
 		<head>
-			<link type="text/css" rel="stylesheet" href="page_css.css"/>
+			<link type="text/css" rel="stylesheet" href="Bandeaucss.css"/>
 			<title> Jamais sans ma pomme </title> <!-- titre de l'onglet de la page -->
 			<meta charset="utf-8"/>
 		</head>
@@ -21,28 +21,46 @@ echo "bonjour $_POST["identifiant_u"]";
  ?>
 
 
-			<div id="header"> <!--Barre en haut du site -->
-				<div id="button"> <p style="color:#FF140C; font-size :16px">Se connecter </p> </div >
-				<div id="button"> <p style="color:#FF140C; font-size:16px"><a href="inscription.php">S'inscrire</a></p> </div >
-				<div id="button"> <p style="color:#FF140C; font-size:16px">Mon panier </p> </div >
+			<ul id="menu">
+	<li><a href="http://localhost/APP_INFO/Bandeau.html">Accueil</a>
 		
+	</li>
+	<li><a href="http://www.mangerbouger.fr/IMG/pdf/inpes_manger_bouger_pdf_produits_saison.pdf">Calendrier</a>
+		
+	</li>
+	<li><a href="#">Acheter/Echanger</a>
+		<ul>
+			
+			<li><a href="http://localhost/APP_INFO/fairemescourses.html#">Nos producteurs</a></li>
+			<li><a href="http://localhost/APP_INFO/Nos_produits.html#">Nos produits</a></li>		
+		</ul>
+		
+	</li><li><a href="#">Des infos !</a>
+		<ul>
+			
+			<li><a href="http://localhost/APP_INFO/Qui_somme_nous.html#">Qui sommes-nous</a></li>
+			<li><a href="http://localhost/APP_INFO/Contact.html#">Contact</a></li>		
+		</ul>
+	</li><li><a href="#">Mon panier</a>
+		<ul>
+			<li><a href="http://localhost/APP_INFO/panier.php">En cours</a></li>
+			<li><a href="#">Avant</a></li>	
+		</ul>
+	</li>
+	</li><li><a href="#">Rechercher</a>	
+	</li>
+	</li><li><a href="http://localhost/APP_INFO/recherche.php#">Nous rejoindre !</a>
+		<ul>
+			<li><a href="http://localhost/APP_INFO/formulaire_inscription.php#">S'inscire</a></li>
+			<li><a href="http://localhost/APP_INFO/formulaire_connexion.php#">Se connecter</a></li>			
+		</ul>
+	</li>
+</ul>
 				<h2>Jamais sans ma pomme </h2> <!-- titres de la page dans la bande-->
 				<h3>So fresh , so French! </h3>
 
 				
 		
-			</div>
-		
-			<div id="barre">
-				<div id="liste"> <!--liste à gauche / une sorte de menu général-->
-					<ul>
-						<li>Accueil</li>
-						<li>Fruits & Legumes</li>
-						<li><a title="fruits et légumes" href="http://www.fruits-legumes.org/">Le calendrier des fruits et legumes</a></li>
-						<li>Forum</li>
-						<li>Qui sommes-nous ?</li>
-					</ul>
-				</div>
 			</div>
 		
 
@@ -83,9 +101,7 @@ echo "bonjour $_POST["identifiant_u"]";
 
 
 			<div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
-				<p><a href="file:///C:/wamp/www/jsmp/Contact.html">- Contact -</a> </p>
-				<p>Mentions Legales - </p>
-				<p>Aide - </p>
+			<p><a href="mentionslegales.html">- Mentions Legales - </p>	
 			</div>
 		
 

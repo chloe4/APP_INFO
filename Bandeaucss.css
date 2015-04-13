@@ -6,6 +6,8 @@
 }
 #menu > li,
 #menu > li li {
+	font-family : across the stars;
+	font-size:12px ;
 	position: relative;
 	display:inline-block;
 	width: 110px;
@@ -66,6 +68,18 @@ font-size:40px;
 font-family: across the stars;
 text-align:center;
 }
+h4{/* titre jamais sans ma pomme*/
+font-size: 20px;
+font-family: across the stars;
+text-align:center;
+color: #E8CC06;
+}
+
+#liste2{/*items pour fruits/légumes */
+color:#fbf1e0;
+font-size: 13px;
+font-family: across the stars;
+}
 
 img{/* la taille des images*/
 width:170px;
@@ -79,14 +93,29 @@ margin-left:300px;
 }
 
 #footer{/*bande du bas avec mentions légales ect*/
-clear:both;
-position: relative;
-bottom: -20px;
-border-bottom-left-radius: 15px;
-border-bottom-right-radius: 15px;
-height: 75px;
-font-family: across the stars;
-color:#FF140C;
-text-align: center;
-margin-left: 6px;
+    clear:both;
+	position: relative;
+	bottom: -20px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 75px;
+	font-family: across the stars;
+	color:#FF140C;
+	text-align: center;
+	margin-left: 6px;
+}
+#description{
+	color:white;
+	font-family: across the stars;
+	
+}
+
+a{ /*liens*/
+color:white;
+text-decoration:none;
+}
+
+
+a:hover{
+color:#00FF00;
 }
