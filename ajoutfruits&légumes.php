@@ -28,7 +28,12 @@ echo "bonjour $_POST["identifiant_u"]";
 	<li><a href="http://www.mangerbouger.fr/IMG/pdf/inpes_manger_bouger_pdf_produits_saison.pdf">Calendrier</a>
 		
 	</li>
-	<li><a href="http://localhost/APP_INFO/fairemescourses.html">Nos producteurs</a>
+	<li><a href="#">Acheter/Echanger</a>
+		<ul>
+			
+			<li><a href="http://localhost/APP_INFO/fairemescourses.html#">Nos producteurs</a></li>
+			<li><a href="http://localhost/APP_INFO/Nos_produits.html#">Nos produits</a></li>		
+		</ul>
 		
 	</li><li><a href="#">Des infos !</a>
 		<ul>

@@ -57,24 +57,26 @@ if($count >=1){
 	<meta charset="UTF-8"/>
 </head>
 <body>
-	<body background="http://images99.i.m.pic.centerblog.net/v8v99xxn.jpg"/>
-		<h2>Jamais sans ma pomme </h2> <!-- titres de la page dans la bande-->
-			<h3>So fresh , so French! </h3>
-
-		<ul id="menu">
-	<li><a href="#">Accueil</a>
+			<body background="http://images99.i.m.pic.centerblog.net/v8v99xxn.jpg"/>
+<ul id="menu">
+	<li><a href="http://localhost/APP_INFO/Bandeau.html">Accueil</a>
 		
 	</li>
-	<li><a href="#">Calendrier</a>
+	<li><a href="http://www.mangerbouger.fr/IMG/pdf/inpes_manger_bouger_pdf_produits_saison.pdf">Calendrier</a>
 		
 	</li>
-	<li><a href="#">Nos producteurs</a>
+		<li><a href="#">Acheter/Echanger</a>
+		<ul>
+			
+			<li><a href="http://localhost/APP_INFO/fairemescourses.html#">Nos producteurs</a></li>
+			<li><a href="http://localhost/APP_INFO/Nos_produits.html#">Nos produits</a></li>		
+		</ul>
 		
 	</li><li><a href="#">Des infos !</a>
 		<ul>
 			
-			<li><a href="#">Qui sommes-nous</a></li>
-			<li><a href="#">Contact</a></li>		
+			<li><a href="http://localhost/APP_INFO/Qui_somme_nous.html#">Qui sommes-nous</a></li>
+			<li><a href="http://localhost/APP_INFO/Contact.html#">Contact</a></li>		
 		</ul>
 	</li><li><a href="#">Mon panier</a>
 		<ul>
@@ -82,12 +84,12 @@ if($count >=1){
 			<li><a href="#">Avant</a></li>	
 		</ul>
 	</li>
-	</li><li><a href="#">Rechercher</a>	
+	</li><li><a href="http://localhost/APP_INFO/recherche.php#">Rechercher</a>	
 	</li>
 	</li><li><a href="#">Nous rejoindre !</a>
 		<ul>
-			<li><a href="#">S'inscire</a></li>
-			<li><a href="#">Se connecter</a></li>			
+			<li><a href="http://localhost/APP_INFO/formulaire_inscription.php#">S'inscire</a></li>
+			<li><a href="http://localhost/APP_INFO/formulaire_connexion.php#">Se connecter</a></li>			
 		</ul>
 	</li>
 </ul>
