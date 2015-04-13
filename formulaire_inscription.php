@@ -66,7 +66,7 @@
             <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
             vers la base de données-->
             <?php
-            include('config.php'); 
+            include('inscription_php.php'); 
             ?>
 
             <!--On définit tous les champs nécessaires à l'inscription-->
