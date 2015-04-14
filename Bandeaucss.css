@@ -54,12 +54,32 @@
 	max-height:13em;
 }
 
-h2{/* titre jamais sans ma pomme*/
+h5{/* titre jamais sans ma pomme*/
+position:relative;
+top:100px;
+margin:auto;	
+margin-top:50px;
 font-size: 40px;
 font-family: across the stars;
-text-align:center;
 color: #E8CC06;
+
+
 }
+#fond_titre_h5{
+  position: relative;
+  color: #E8CC06;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  background: #59983b;
+  -webkit-border-radius: 250px / 200px;
+  -moz-border-radius: 250px / 200px;
+  -o-border-radius: 250px / 200px;
+  border-radius: 250px / 200px;
+  vertical-align: bottom;
+}
+}
+
 
 
 h3{/* titre so fresh so french*/
