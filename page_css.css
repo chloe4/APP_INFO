@@ -28,6 +28,7 @@ h3{
 /*Style de fond du site */
 body{
 	background-attachment:fixed;
+	background-size:absolute;
 }
 
 /*Le corps du tableau du corps du site !*/

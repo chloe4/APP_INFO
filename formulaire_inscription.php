@@ -15,7 +15,7 @@
 
         <body>
         <!--On met un fond à notre page-->
-        <body background="http://images99.i.m.pic.centerblog.net/v8v99xxn.jpg"/> 
+        <body background="myrtilles.jpg" id="fond"/> 
             <!--On définit les boutons d'en-tête de la page-->
            <ul id="menu">
     <li><a href="http://localhost/APP_INFO/Bandeau.html">Accueil</a>
