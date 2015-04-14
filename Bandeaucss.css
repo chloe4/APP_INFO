@@ -104,7 +104,7 @@ font-family: across the stars;
 #fond{
  background-repeat:no-repeat;
  background-image:url(fond_ecran.jpg);
- background-size: 100% 100%;
+ background-size: cover;
  }
 
 img{/* la taille des images*/
@@ -141,7 +141,22 @@ color:white;
 text-decoration:none;
 }
 
-
+#trait{
+	border-top : 1px solid #000;
+	width : 500px;
+}
 a:hover{
 color:#00FF00;
+}
+
+p{
+	color:black;
+	font-size:30px; 
+	font-family:across the stars;
+}
+
+ul{
+	font-size:15px; 
+	font-family:across the stars;
+	color:black;
 }

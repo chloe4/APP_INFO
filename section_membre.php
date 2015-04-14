@@ -3,13 +3,13 @@
     <html>
 
         <head>
-            <link type="text/css" rel="stylesheet" href="page_css.css"/>
+            <link type="text/css" rel="stylesheet" href="bandeaucss.css"/>
             <meta charset="UTF-8">
             <title>Espace membre</title>
         </head>
         
         <body>
-                <body background="http://images99.i.m.pic.centerblog.net/v8v99xxn.jpg"/>
+                <body id="fond"/>
 <ul id="menu">
     <li><a href="http://localhost/APP_INFO/Bandeau.html">Accueil</a>
         
