@@ -56,18 +56,20 @@
 
 h5{/* titre jamais sans ma pomme*/
 position:relative;
-top:100px;
+bottom:250px;
 margin:auto;	
 margin-top:50px;
 font-size: 40px;
 font-family: across the stars;
-color: #E8CC06;
+color: white;
+
 
 
 }
 #fond_titre_h5{
   position: relative;
   color: #E8CC06;
+  opacity: 0.5;
   margin: auto;
   width: 400px;
   height: 300px;
@@ -129,6 +131,7 @@ margin-left:300px;
 	color:#FF140C;
 	text-align: center;
 	margin-left: 6px;
+
 }
 #description{
 	color:white;
@@ -137,7 +140,7 @@ margin-left:300px;
 }
 
 a{ /*liens*/
-color:white;
+color:black;
 text-decoration:none;
 }
 
