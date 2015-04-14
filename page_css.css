@@ -27,6 +27,7 @@ h3{
 
 /*Style de fond du site */
 body{
+	background-image: url(fond_ecran.jpeg); 
 	background-attachment:fixed;
 	background-size:absolute;
 }
