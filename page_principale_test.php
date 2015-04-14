@@ -12,7 +12,7 @@
 
 
 		<body>
-		<body background="http://images.forwallpaper.com/files/thumbs/preview/20/207943__texture-timber-lumber-wood-close-up_p.jpg"/><!-- fond d'écran-->
+		<body id="fond"/><!-- fond d'écran-->
 
 
 <<?php 
