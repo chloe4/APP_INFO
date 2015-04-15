@@ -54,12 +54,43 @@
 	max-height:13em;
 }
 
+<<<<<<< HEAD
 h2{/* titre jamais sans ma pomme*/
 font-size: 40px;
 font-family: across the stars;
 text-align:center;
 color: #E8CC06;
 }
+=======
+h5{/* titre jamais sans ma pomme*/
+position:relative;
+bottom:250px;
+margin:auto;	
+margin-top:50px;
+font-size: 40px;
+font-family: across the stars;
+color: white;
+
+
+
+}
+#fond_titre_h5{
+  position: relative;
+  color: #E8CC06;
+  opacity: 0.5;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  background: #59983b;
+  -webkit-border-radius: 250px / 200px;
+  -moz-border-radius: 250px / 200px;
+  -o-border-radius: 250px / 200px;
+  border-radius: 250px / 200px;
+  vertical-align: bottom;
+}
+}
+
+>>>>>>> origin/master
 
 
 h3{/* titre so fresh so french*/
@@ -109,6 +140,7 @@ margin-left:300px;
 	color:#FF140C;
 	text-align: center;
 	margin-left: 6px;
+
 }
 #description{
 	color:white;
@@ -117,7 +149,7 @@ margin-left:300px;
 }
 
 a{ /*liens*/
-color:white;
+color:black;
 text-decoration:none;
 }
 
