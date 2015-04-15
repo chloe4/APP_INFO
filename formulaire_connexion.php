@@ -2,60 +2,9 @@
 
     <html>
 
-        <head>
-            <!--On associe à la page html la page CSS-->
-            <link type="text/css" rel="stylesheet" href="Bandeaucss.css"/> 
-            <title> S'inscrire </title>
-            <meta charset="utf-8" />
-        </head>
-
-
-        <body>
-        <!--On met un fond à notre page-->
-        <body id="fond"/> 
-
-            <!--On définit les boutons d'en-tête de la page-->
-           <ul id="menu">
-    <li><a href="http://localhost/APP_INFO/Bandeau.html">Accueil</a>
-        
-    </li>
-    <li><a href="http://www.mangerbouger.fr/IMG/pdf/inpes_manger_bouger_pdf_produits_saison.pdf">Calendrier</a>
-        
-    </li>
-  <li><a href="#">Acheter/Echanger</a>
-        <ul>
-            
-            <li><a href="http://localhost/APP_INFO/fairemescourses.html#">Nos producteurs</a></li>
-            <li><a href="http://localhost/APP_INFO/Nos_produits.html#">Nos produits</a></li>        
-        </ul>
-        
-    </li><li><a href="#">Des infos !</a>
-        <ul>
-            
-            <li><a href="http://localhost/APP_INFO/Qui_somme_nous.html#">Qui sommes-nous</a></li>
-            <li><a href="http://localhost/APP_INFO/Contact.html#">Contact</a></li>        
-        </ul>
-    </li><li><a href="#">Mon panier</a>
-        <ul>
-            <li><a href="http://localhost/APP_INFO/panier.php">En cours</a></li>
-            <li><a href="#">Avant</a></li>  
-        </ul>
-    </li>
-    </li><li><a href="http://localhost/APP_INFO/recherche.php#">Rechercher</a> 
-    </li>
-    </li><li><a href="#">Nous rejoindre !</a>
-        <ul>
-            <li><a href="http://localhost/APP_INFO/formulaire_inscription.php#">S'inscire</a></li>
-            <li><a href="http://localhost/APP_INFO/formulaire_connexion.php#">Se connecter</a></li>           
-        </ul>
-    </li>
-</ul>
-
-                <!--Titre de la page-->
-                <h2> Bienvenue sur "Jamais sans ma pomme"<br> 
-                    Inscrivez vous</br> </h2>
-                <h3><em> So fresh, so french ! </em></h3>
-            </div>
+        <?php 
+            include('simpleuh.php'); 
+        ?>
 
             <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
             vers la base de données-->
