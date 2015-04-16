@@ -13,7 +13,7 @@ session_start();
 		)
 	{
 
-		// On se connecte à la base de données
+		// On se connecte à la base de données via la fonction PDO
 		$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
 		
 		// echo "a"; (pour faire des tests)
@@ -46,7 +46,13 @@ session_start();
 			echo $e->getMessage();
 		}
 
+session_start ();
+                $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
+            	$_SESSION['mot_passe_u'] = $_POST['mot_passe_u'];
+            	header ('location: section_membre.php');
+
 	}
+
 
 
 ?>

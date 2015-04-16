@@ -2,9 +2,26 @@
 	<html>
 
 		<?php 
-	include('simpleuh.php'); 
-	 ?>
+			include('simpleuh.php'); 
+		?>
 
+		<?php
+ 			$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
+	        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+	        // On selectionne les données dont on a besoin, c'est-à-dire le mot de passe et le pseudo de l'utilisateur
+	        $sql = "SELECT `article_a` FROM `jsmp`.`Catalogue_Articles` WHERE classe_a = 1";
+	        // Pas la peine de préparer la requête, pas de données récupéré depuis l'utilisateur
+	        // Du coup "query" directement
+	        $request = $db->query($sql);
+
+	        // On rentre ces données dans un tableau
+	        $request->execute(array("article_a"));
+
+ 			$tableau = $request->fetch();
+        	echo $tableau["article_a"].';
+
+		?>
 
 <div id="liste2" >
 	
