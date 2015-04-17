@@ -10,7 +10,7 @@
 	        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	        // On selectionne les données dont on a besoin, c'est-à-dire le mot de passe et le pseudo de l'utilisateur
-	        $sql = "SELECT `article_a` FROM `jsmp`.`Catalogue_Articles` WHERE classe_a = 1";
+	        $sql = "SELECT `article_a` FROM `jsmp`.`catalogue_articles` WHERE classe_a = 1";
 	        // Pas la peine de préparer la requête, pas de données récupéré depuis l'utilisateur
 	        // Du coup "query" directement
 	        $request = $db->query($sql);
@@ -19,7 +19,7 @@
 	        $request->execute(array("article_a"));
 
  			$tableau = $request->fetch();
-        	echo $tableau["article_a"].';
+        	echo $tableau["article_a"].;
 
 		?>
 

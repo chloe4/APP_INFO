@@ -6,7 +6,6 @@
             include('simpleuh.php'); 
         ?>
 
-            
             <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
             vers la base de données-->
             <?php
