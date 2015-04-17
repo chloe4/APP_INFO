@@ -6,7 +6,7 @@
 		<?php 
 	include('simpleuh.php'); 
 	 ?>
-				<img src="Logo.png/">
+				<img src="Logo.png"/>
 
 
 <div id="liste2" >
