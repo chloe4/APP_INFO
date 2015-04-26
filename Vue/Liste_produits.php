@@ -2,24 +2,25 @@
 	<html>
 
 		<?php 
-			include('simpleuh.php'); 
+			include('C:\wamp\www\APP_INFO\Vue\simpleuh.php'); 
 		?>
 
 		<?php
- 			$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
+ 			$db = new PDO("mysql:host=127.0.0.1;dbname=login","root","");
 	        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	        // On selectionne les données dont on a besoin, c'est-à-dire le mot de passe et le pseudo de l'utilisateur
-	        $sql = "SELECT `article_a` FROM `jsmp`.`catalogue_articles` WHERE classe_a = 1";
+	        $sql = "SELECT `nom_a` FROM `login`.`articles` WHERE classe_a = 0";
 	        // Pas la peine de préparer la requête, pas de données récupéré depuis l'utilisateur
 	        // Du coup "query" directement
 	        $request = $db->query($sql);
 
 	        // On rentre ces données dans un tableau
-	        $request->execute(array("article_a"));
+	        $request->execute(array("nom_a"));
 
  			$tableau = $request->fetch();
-        	echo $tableau["article_a"].;
+        	echo "<a href=\"Legumes_Fruits/ail.html\">".$tableau["nom_a"]."";
+ 
 
 		?>
 
@@ -32,7 +33,7 @@
 			<ul>
 
 			
-			<li><a href="http://localhost/APP_INFO/pomme(saison).html#">Pomme</a></li>
+			<li><a href="http://localhost/APP_INFO/Legumes_Fruits/pomme(saison).html#">Pomme</a></li>
 			<li><a href="http://localhost/APP_INFO/banane(saison).html#">Banane</a></li>
 			<li><a href="#">Cerise</a></li>
 			<li><a href="#">Fraise</a></li>	
@@ -177,12 +178,7 @@
 
 </div>
 	
-				<div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
-				
-				<p><a href="mentionslegales.html">- Mentions Legales - </p>		
-			</div>
-
-
-
-</body>
+				<?php 
+				include('bandeau_bas.php'); 
+	 		?>
 </html>

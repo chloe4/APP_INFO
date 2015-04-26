@@ -27,12 +27,9 @@
 			
 			<div id="trait"></div>
 
-			<div id="footer">
-				<p><a href="mentionslegales.html">- Mentions Legales - </p>					
-			</div>
-
-
-		</body>
+			<?php 
+				include('bandeau_bas.php'); 
+	 		?>
 
 	</html>
 

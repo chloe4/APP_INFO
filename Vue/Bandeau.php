@@ -4,8 +4,8 @@
 	<html>
 
 		<?php 
-	include('simpleuh.php'); 
-	 ?>
+			include('simpleuh.php'); 
+	 	?>
 			
 			<table border="1px"><!-- tableau taille 3*3 avec des images -->	
 				<thead>
@@ -31,10 +31,8 @@
 				</tbody>
 			</table>
 
-				<div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
-				
-				<p><a href="mentionslegales.html">- Mentions Legales - </p>		
-			</div>
-
-		</body>
+			<?php 
+				include('bandeau_bas.php'); 
+	 		?>
+	 		
 	</html>

@@ -29,14 +29,9 @@
             </form>
     
 
-            <div id="footer"> <!--bandeau en bas , à répéter sur toutes les pages web -->
-                <p><a href="Contact.php">- Contact -</a> </p>
-                <p><a href="mentionslegales.php">Mentions Legales - </p>
-               
-            </div>
-
-
-        </body>
+           <?php 
+                include('bandeau_bas.php'); 
+            ?>
 
 
     </html>

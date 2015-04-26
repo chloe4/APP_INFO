@@ -33,7 +33,7 @@
                 session_start ();
                 $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
             	$_SESSION['mot_passe_u'] = $_POST['mot_passe_u'];
-            	header ('location: section_membre.php');
+            	header ('location: C:\wamp\www\APP_INFO\Vue\section_membre.php');
             }
     }
 ?>

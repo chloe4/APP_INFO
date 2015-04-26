@@ -13,13 +13,13 @@
 				<li><a href="http://www.mangerbouger.fr/IMG/pdf/inpes_manger_bouger_pdf_produits_saison.pdf">Calendrier</a></li>
 				<li><a href="#">Acheter/Echanger</a>
 					<ul>
-						<li><a href="fairemescourses.php#">Nos producteurs</a></li>
-						<li><a href="Nos_produits.html#">Nos produits</a></li>		
+						<li><a href="faire_courses.php#">Nos producteurs</a></li>
+						<li><a href="Liste_produits.php#">Nos produits</a></li>		
 					</ul>
 				</li>
 				<li><a href="#">Des infos !</a>
 					<ul>
-						<li><a href="Qui_somme_nous.html#">Qui sommes-nous</a></li>
+						<li><a href="Qui_sommes_nous.php#">Qui sommes-nous</a></li>
 						<li><a href="Contact.php#">Contact</a></li>		
 					</ul>
 				</li>
@@ -32,7 +32,7 @@
 				<li><a href="recherche.php#">Rechercher</a></li>
 				<li><a href="#">Nous rejoindre !</a>
 					<ul>
-						<li><a href="formulaire_inscription.php#">S'inscrire</a></li>
+						<li><a href="formulaire_inscription.php">S'inscrire</a></li>
 						<li><a href="formulaire_connexion.php#">Se connecter</a></li>			
 					</ul>
 				</li>

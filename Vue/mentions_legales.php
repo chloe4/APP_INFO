@@ -64,13 +64,9 @@
 </ol>
 
 </div>
-			<div id="footer">
-				<p><a href="Contact.html"/>- Contact - </p> 			
-				<p><a href ="mentionslegales.html/">Mentions Legales -</a></p>		
-			</div>
-
-
-		</body>
+			<?php 
+				include('bandeau_bas.php'); 
+	 		?>
 	
 	</html>
 
