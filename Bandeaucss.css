@@ -70,8 +70,10 @@ margin-top:50px;
 font-size: 40px;
 font-family: across the stars;
 color: white;
-}
 
+
+
+}
 #fond_titre_h5{
   position: relative;
   color: #E8CC06;
@@ -85,6 +87,7 @@ color: white;
   -o-border-radius: 250px / 200px;
   border-radius: 250px / 200px;
   vertical-align: bottom;
+}
 }
 
 
@@ -110,7 +113,7 @@ font-family: across the stars;
 
 #fond{
  background-repeat:no-repeat;
- background-image:url(fond_ecran.jpg);
+ background-image:url(Vue/fond_ecran.jpg);
  background-size: cover;
  }
 

@@ -4,9 +4,9 @@
 	<html>
 
 		<?php 
-			include('simpleuh.php'); 
+			include('C:\wamp\www\APP_INFO\Vue\simpleuh.php'); 
 	 	?>
-			
+		
 			<table border="1px"><!-- tableau taille 3*3 avec des images -->	
 				<thead>
 					<th colspan="3"><p style="font-size:30px; font-family:across the stars;color:#FF140C"><em><strong> Selections du moment </strong></em></p></th>

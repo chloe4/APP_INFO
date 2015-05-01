@@ -28,7 +28,7 @@
             if ($pseudo!= $_POST['identifiant_u'] || $motdepasse!= $_POST['mot_passe_u']) {
                 echo "Votre mot de passe ou votre identifiant est erroné. Veuillez réessayer !";
             }
-            else{ //Vous avez été reconnu, nous pouvons démarrer la session
+            else { //Vous avez été reconnu, nous pouvons démarrer la session
                 echo "Vous êtes bien logué";
                 session_start ();
                 $_SESSION['identifiant_u'] = $_POST['identifiant_u'];

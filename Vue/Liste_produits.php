@@ -19,9 +19,7 @@
 	        $request->execute(array("nom_a"));
 
  			$tableau = $request->fetch();
-        	echo "<a href=\"Legumes_Fruits/ail.html\">".$tableau["nom_a"]."";
- 
-
+        	echo "<a href=\"".$tableau["nom_a"].".php\">".$tableau["nom_a"]."";
 		?>
 
 <div id="liste2" >

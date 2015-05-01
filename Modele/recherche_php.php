@@ -48,27 +48,3 @@ if($count >=1){
 }
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<<?php 
-include('simpleuh.php');
- ?>
-
-<form action="<?php echo $_SERVER ['PHP_SELF'];?>" method="post">
-<label for="query"><p style ="front-size:40px;font-family:across the stars;color:yellow">Entrer votre recherche</label>
-<input type="search" name="query" maxlength="100" size ="30" id="query"/></br>
-
-Rechercher au niveau de :
-<select name="filtre">
-
-	<option value="Site entier">Site entier </option>
-	<!--<option value="Blog">Blog </option>
-	<option value="Pages">Pages </option>-->
-<input type ="submit" value="Rechercher">
-</form>
-<?php echo $resultats;?>
-</body>
-
-
-</html>

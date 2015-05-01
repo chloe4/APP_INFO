@@ -2,7 +2,7 @@
 <html>
 
 <?php 
-	include('simpleuh.php'); 
+	include('C:\wamp\www\APP_INFO\Vue\simpleuh.php'); 
 	 ?>
 <div style ="width:120px ; height: 80px; background-color: #331f1d;float:right;font-family: across the stars;border-radius:6px;position:relative;margin-top:52px">
 
