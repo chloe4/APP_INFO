@@ -20,7 +20,7 @@ session_start();
 		
 		$request = $db->prepare("INSERT INTO `jsmp`.`utilisateur` (`nom_u`,`prenom_u`,`date_naissance_u`,`telephone_u`,`email_u`,`identifiant_u`,`mot_passe_u`) VALUES (:nom_u,:prenom_u,:date_naissance_u,:telephone_u,:email_u,:identifiant_u,:mot_passe_u);");
 		
-		// print_r($_POST); (pour faire des tests, afficher le nom, prénom,..., mot de passe)
+		print_r($_POST); //(pour faire des tests, afficher le nom, prénom,..., mot de passe)
 		
 		// permet de prendre la date sous un certain format : ici le format est DD/MM/AAAA
 		$datedenaissancce = DateTime::createFromFormat('d/m/Y',$_POST['date_naissance_u']);
@@ -46,10 +46,10 @@ session_start();
 			echo $e->getMessage();
 		}
 
-session_start ();
-                $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
-            	$_SESSION['mot_passe_u'] = $_POST['mot_passe_u'];
-            	header ('location: C:\wamp\www\APP_INFO\Vue\section_membre.php');
+		session_start ();
+            $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
+         	$_SESSION['mot_passe_u'] = $_POST['mot_passe_u'];
+           	header ('location: C:\wamp\www\APP_INFO\Vue\section_membre.php');
 
 	}
 

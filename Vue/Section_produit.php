@@ -6,10 +6,6 @@
 			include('Vue/simpleuh.php');
 		?>
 
-		<div style ="width:120px ; height: 80px; background-color: #331f1d;float:right;font-family: across the stars;border-radius:6px;position:relative;margin-top:52px">
-			<img style = "height:80px ; width:120px ; float : right;margin-top:0px" src="Logo.png"/>
-		</div>
-
 		<h1>L'ail</h1>
 		<center><img src ="http://www.calybeauty.com/medias/2010/7/ailplacement.jpg"/></center><!--son image-->
 

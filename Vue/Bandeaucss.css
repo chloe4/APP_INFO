@@ -1,170 +1,96 @@
 /* partie positionnement et déco */
-#menu a { 
-	display:block; 
-	color: #fff; 
-	text-decoration:none;
+#menu a { display:block; color: #fff; text-decoration:none;}
+
+#menu > li, #menu > li li {
+	font-family : across the stars; font-size:12px ;
+	position: relative; display:inline-block;
+	width: 110px; padding: 6px 15px;
+	background-color: #777; background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
 }
-#menu > li,
-#menu > li li {
-	font-family : across the stars;
-	font-size:12px ;
-	position: relative;
-	display:inline-block;
-	width: 110px;
-	padding: 6px 15px;
-	background-color: #777;
-	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
-}
+
 #menu > li li { background: transparent none; }
+
 #menu > li li a { color: #444; }
+
 #menu > li li:hover { background:#eee; }
-#menu > li:first-child {
-	border-right: 1px solid #777;
-	border-radius: 8px 0 0 8px;
-}
-#menu > li + li {
-	border-left: 1px solid #aaa;
-	border-right: 1px solid #777;
-}
-#menu > li:last-child {
-	border-right:0;
-	border-left: 1px solid #aaa;
-	border-radius: 0 8px 8px 0 ;
-}
-#menu > li:hover {
-	background-color: #999;
-	background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
-}
+
+#menu > li:first-child {border-right: 1px solid #777; border-radius: 8px 0 0 8px;}
+
+#menu > li + li {border-left: 1px solid #aaa; border-right: 1px solid #777;}
+
+#menu > li:last-child {border-right:0; border-left: 1px solid #aaa; border-radius: 0 8px 8px 0 ;}
+
+#menu > li:hover {background-color: #999; background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);}
 /* (presque) fin de la partie positionnement/déco */
+
 /* dans cette déclaration, on fixe le max-height */
 #menu ul {
-	position: absolute;
-	top: 2em; left:0;
-	max-height:0em;	
-	margin:0; padding:0;
-	background-color:#ddd;
-	background-image: linear-gradient(#fff,#ddd);
+	position: absolute; top: 2em; left:0;
+	max-height:0em;	margin:0; padding:0;
+	background-color:#ddd; background-image: linear-gradient(#fff,#ddd);
 	overflow:hidden;
 	transition: 1s max-height 0.3s;
 	border-radius: 0 0 8px 8px;
 }
-/* ici on change la valeur de max-height au :hover */
-#menu > li:hover ul {
-	/* need an adaptation, lower is better, but see it large  ;)  */
-	max-height:13em;
-}
+/* ici on change la valeur de max-height au :hover */ /* need an adaptation, lower is better, but see it large  ;)  */
+#menu > li:hover ul {max-height:13em;}
 
 /*head*/
-h2{/* titre jamais sans ma pomme*/
-font-size: 40px;
-font-family: across the stars;
-text-align:center;
+
+h1{font-size:30px; font-family:across the stars; color:#FF140C;}
+
+/* titre jamais sans ma pomme*/
+h2{font-size: 40px; font-family: across the stars; text-align:center; color: #E8CC06;}
+
+/* titre so fresh so french*/
+h3{color: #E8CC06; font-size:30px; font-family: across the stars; text-align:center;}
+
+h4{font-size: 20px;font-family: across the stars; text-align:center;
 color: #E8CC06;
 }
 
-h5{/* titre jamais sans ma pomme*/
-position:relative;
-bottom:250px;
-margin:auto;	
-margin-top:50px;
-font-size: 40px;
-font-family: across the stars;
-color: white;
+h5{
+position:relative; bottom:250px;
+margin:auto; margin-top:50px;
+font-size: 40px; font-family: across the stars; color: white;
 }
 
 #fond_titre_h5{
   position: relative;
-  color: #E8CC06;
-  opacity: 0.5;
-  margin: auto;
-  width: 400px;
-  height: 300px;
+  color: #E8CC06; opacity: 0.5;
+  margin: auto; width: 400px; height: 300px;
   background: #59983b;
-  -webkit-border-radius: 250px / 200px;
-  -moz-border-radius: 250px / 200px;
-  -o-border-radius: 250px / 200px;
+  -webkit-border-radius: 250px / 200px; -moz-border-radius: 250px / 200px; -o-border-radius: 250px / 200px;
   border-radius: 250px / 200px;
   vertical-align: bottom;
 }
+/*items pour fruits/légumes */
+#liste2{color:#fbf1e0; font-size: 13px; font-family: across the stars;}
 
+#fond{background-repeat:no-repeat; background-image:url(fond_ecran.jpg); background-size: cover;}
 
+/* la taille des images*/
+img{width:170px; height:170px;}
 
-h3{/* titre so fresh so french*/
-color: #E8CC06;
-font-size:30px;
-font-family: across the stars;
-text-align:center;
-}
-h4{/* titre jamais sans ma pomme*/
-font-size: 20px;
-font-family: across the stars;
-text-align:center;
-color: #E8CC06;
-}
+/* style du tableau3*3 */
+table,td{border: 2px solid #331f1d; margin-left:300px;}
 
-#liste2{/*items pour fruits/légumes */
-color:#fbf1e0;
-font-size: 13px;
-font-family: across the stars;
-}
-
-#fond{
- background-repeat:no-repeat;
- background-image:url(fond_ecran.jpg);
- background-size: cover;
- }
-
-img{/* la taille des images*/
-width:170px;
-height:170px;
-}
-
-
-table,td{/* style du tableau3*3 */
-border: 2px solid #331f1d;
-margin-left:300px;
-}
-
-#footer{/*bande du bas avec mentions légales ect*/
-    clear:both;
-	position: relative;
-	bottom: -20px;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
-	height: 75px;
-	font-family: across the stars;
+#footer{/*bandeau du bas*/
+    clear:both; position: relative; bottom: -20px; height: 75px;
+	border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; margin-left: 6px;
+	font-family: across the stars; text-align: center;
 	color:#FF140C;
-	text-align: center;
-	margin-left: 6px;
-
-}
-#description{
-	color:white;
-	font-family: across the stars;
-	
 }
 
-a{ /*liens*/
-color:black;
-text-decoration:none;
-}
+#description{color:white; font-family: across the stars;}
 
-#trait{
-	border-top : 1px solid #000;
-	width : 500px;
-}
-a:hover{
-color:#00FF00;
-}
+/*liens*/
+a{color:black; text-decoration:none;}
 
-p{
-	color:black;
-	font-size:30px; 
-	font-family:across the stars;
-}
+#trait{border-top : 1px solid #000; width : 500px;}
 
-ul{
-	font-size:15px; 
-	font-family:across the stars;
-	color:black;
-}
+a:hover{color:#00FF00;}
+
+p{color:black; font-size:30px; font-family:across the stars;}
+
+ul{font-size:15px; font-family:across the stars;color:black;}

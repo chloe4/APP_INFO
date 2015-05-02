@@ -7,8 +7,8 @@
 	 	?>
 
 		<div id="barre1">
-		<center><p style="font-size:30px;font-family: across the stars;color:#E8CC06"><!--phrase -->
-			<strong>Une question, une remarque ? Contactez-nous !</br>
+			<center><p><!--phrase -->
+				<strong>Une question, une remarque ? Contactez-nous !</br>
 				Afin de mieux vous guider merci de choisir une rubrique ci-dessous.</strong></p>
 			</center>
 		</div>

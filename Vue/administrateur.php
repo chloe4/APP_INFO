@@ -10,7 +10,7 @@
 			<h3>So fresh , so French! </h3>
 
 			<p><strong>Administration Système</strong></br>
-				<ul style="font-size:15px; font-family:across the stars;color:black">
+				<ul>
 					<li>Mot de passe</li>
 					<li>Accès</li>
 					<li>Configuration</li>

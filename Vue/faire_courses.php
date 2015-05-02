@@ -7,10 +7,10 @@
 		?>
 		
 
-		<h1 style="font-size:30px; font-family:across the stars;color:#FF140C"> Localisez vous </h1>
+		<h1> Localisez vous </h1>
 		<div id="mesproducteursfavoris">
-			<h5 style="font-size:20px; font-family:across the stars;color:#FF140C"> Mes producteurs favoris </h5>
-			<ul style="font-size:15px; font-family:across the stars;color:#FF140C"> 
+			<h4> Mes producteurs favoris </h4>
+			<ul> 
 				<li> <a href ="http://localhost/APP_INFO/ProdCaroline.html"> Caroline Nopper </a></li>
 				<li> <a href ="http://localhost/APP_INFO/ProdAlice.html"> Alice Samaran </a></li>
 				<li> <a href ="http://localhost/APP_INFO/ProdCome.html"> Côme Schechter </a></li>

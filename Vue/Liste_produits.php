@@ -2,7 +2,7 @@
 	<html>
 
 		<?php 
-			include('C:\wamp\www\APP_INFO\Vue\simpleuh.php'); 
+			include('simpleuh.php'); 
 		?>
 
 		<?php

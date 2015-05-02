@@ -4,7 +4,7 @@
 
 
         <?php 
-            include('C:\wamp\www\APP_INFO\Vue\simpleuh.php'); 
+            include('simpleuh.php'); 
         ?>
 
             
@@ -15,10 +15,9 @@
         ?>
 
         <!--On définit tous les champs nécessaires à l'inscription-->
-        <form action="Bandeau.php" method="post">
-       
-            <p style = "font-family:across the stars ; color:#E8CC06" >
-            Nom : <input type="text" name="nom_u" /></br>
+        <form action="section_membre.php" method="post">
+
+            <p> Nom : <input type="text" name="nom_u" /></br>
             Prénom : <input type="text" name="prenom_u" /></br>
             Année de naissance (JJ/MM/AAAA): <input type="date" name="date_naissance_u" /></br>
             Téléphone : <input type="int" name="telephone_u" /></br>

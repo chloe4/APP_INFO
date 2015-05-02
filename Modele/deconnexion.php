@@ -9,5 +9,5 @@
     session_destroy ();
 
     // On redirige le visiteur vers la page d'accueil
-    header ('location: page_principale_test.php');
+    header ('location: C:\wamp\www\APP_INFO\Vue\Bandeau.php');
     ?>

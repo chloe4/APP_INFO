@@ -1,4 +1,4 @@
-	<html>
+<!--En tête de chaque page-->
 		<head>
 			<link type="text/css" rel="stylesheet" href="Bandeaucss.css" media="all" />
 			<title> Jamais sans ma pomme </title>
