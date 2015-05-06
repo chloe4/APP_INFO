@@ -1,0 +1,118 @@
+/* ==============================================
+   	   FEUILLE DE STYLE DES GABARITS HTML/CSS
+   	   				MODELE07
+   ============================================== */
+
+
+/* ================
+		Général 
+   ================*/
+
+body {color: #F0E39E;background: #2C2F22;}
+
+/*Liens*/
+a {color: #FF6533;}
+a:hover, a:focus {color: #FF4C00;}
+
+strong {color: #A1B55D;}
+
+
+/* Barre de menu*/
+#menu a {display:block; color: #fff; text-decoration:none;}
+#menu > li, #menu > li li {
+	font-family : Georgia;
+	font-size:12px ;
+	position: relative;
+	display:inline-block;
+	width: 70px;
+	padding: 5px 15px;
+	background-color: #777;
+	height: 30px;
+	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
+}
+#menu > li li { background: transparent none; }
+#menu > li li a { color: #444; }
+#menu > li li:hover { background:#eee; }
+#menu > li:first-child {
+	border-right: 0px solid #777;
+	border-radius: 8px 0 0 8px;
+}
+#menu > li + li {border-left: 1px solid #aaa;border-right: 1px solid #777;}
+#menu > li:last-child {border-right:0;border-left: 1px solid #aaa;border-radius: 0 8px 8px 0;}
+#menu > li:hover {background-color: #999;background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);}
+/* (presque) fin de la partie positionnement/déco */
+
+/* dans cette déclaration, on fixe le max-height */
+#menu ul {
+	position: absolute;
+	top: 2em; left:0;
+	max-height:0em;	
+	margin:0; padding:0;
+	background-color:#ddd;
+	background-image: linear-gradient(#fff,#ddd);
+	overflow:hidden;
+	transition: 1s max-height 0.3s;
+	border-radius: 0 0 8px 8px;
+}
+/* ici on change la valeur de max-height au :hover, need an adaptation, lower is better, but see it large  ;)  */
+#menu > li:hover ul {max-height:13em;}
+#menu{position: absolute;margin:30px; padding:30px;}
+
+/*Fond du site*/
+
+
+/* Bloc central contenant #navigation et #contenu */
+#centre {background: url(fond.gif) repeat-y;}
+
+/* Navigation */
+#navigation {background: #181A12;}
+#navigation a {color: #FF6533;}
+#navigation a:hover, #navigation a:focus {background: #000000;}
+
+/* Contenu principal */
+#contenu {color: #363B29;background: #cbd888;}
+#contenu a {color: #332510;}
+#contenu a:hover, #contenu a:focus {color: #6E5122;}
+#contenu strong {color: #181A12;}
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {padding: 10px 5px;}
+#global {width: 850px; margin: 0 auto;}
+
+/* En-tête */
+#entete {padding: 20px 20px 20px 20px; height: 100px;}
+#entete h1 {margin: 0;}
+#entete h1 img {float: left;margin: 7px 20px 10px 0;}
+#entete .sous-titre {margin: 4px 0 15px 0;}
+
+/* Bloc central contenant #navigation et #contenu */
+#centre {width: 100%;overflow: hidden;}
+
+/* Menu de navigation */
+#navigation {width: 180px;height : 180px; float: left; background-image:url(fond.gif);}
+#navigation ul {margin: 0;padding: 20px 10px 20px 10px;list-style: none;}
+#navigation img {width: 100%;height: 100%;}
+
+/* Contenu */
+#contenu {margin-left: 200px; padding: 10px 20px;background-image:url(fond_ecran.jpg); background-size: cover;}
+#contenu > :first-child {margin-top: 10px;}
+#contenu p, #contenu li {line-height: 1.5;}
+
+/* Pied de page */
+#pied {margin: 0; padding: 15px 20px 10px 0; font-size: .85em;}
+#pied img {width: 850px;height: 80px;}
+
+#footer{/*bande du bas avec mentions légales ect*/
+    clear:both;
+	position: relative;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-family: Georgia;
+	color:#FF140C;
+	text-align: center;
+	margin-left: 6px;
+}
+
