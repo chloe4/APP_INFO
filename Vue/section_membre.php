@@ -32,6 +32,26 @@
 
         <div class ="Fairemescourses"> <a href ="panier.html"/>Faire mes courses</a></div>
         
+        
+
+
+
+        <?php
+            include('C:\wamp\www\APP_INFO\Modele\ajout_php.php'); 
+        ?>
+
+        <!--On définit tous les champs nécessaires à l'ajout de fruits et de légumes-->
+        <form action="Liste_produits.php" method="post">
+           
+            Article : <input type="text" name="article_a" /></br>
+            Variété : <input type="text" name="varietes_a" /></br>
+                 
+            <!--On définit un bouton permettant d'envoyer les informations-->
+            <input type="submit" name="envoyer" Value="Ajout d'article"/></br>
+
+
+
+
         <?php 
             include('bandeau_bas.php'); 
         ?>

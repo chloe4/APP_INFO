@@ -54,14 +54,14 @@
 	max-height:13em;
 }
 
-/*head*/
+<<<<<<< HEAD
 h2{/* titre jamais sans ma pomme*/
 font-size: 40px;
 font-family: across the stars;
 text-align:center;
 color: #E8CC06;
 }
-
+=======
 h5{/* titre jamais sans ma pomme*/
 position:relative;
 bottom:250px;
@@ -90,6 +90,7 @@ color: white;
 }
 }
 
+>>>>>>> origin/master
 
 
 h3{/* titre so fresh so french*/
@@ -113,7 +114,7 @@ font-family: across the stars;
 
 #fond{
  background-repeat:no-repeat;
- background-image:url(Vue/fond_ecran.jpg);
+ background-image:url(fond.gif);
  background-size: cover;
  }
 
