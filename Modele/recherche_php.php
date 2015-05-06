@@ -26,7 +26,7 @@ include('C:\wamp\www\APP_INFO\connect_db.php');
 
 $req = $db->prepare($sql);// prépare requète à l'éxécution & retourne un objet 
 
-if($nbreParametres==2){
+if($nbreParametres==3){
 	$req->execute(array('%'.$query.'%','%'.$query.'%','%'.$query.'%','%'.$query.'%'));
 
 }else {

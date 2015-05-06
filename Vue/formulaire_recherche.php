@@ -11,7 +11,7 @@
 	 	?>
 
 		<form action="<?php echo $_SERVER ['PHP_SELF'];?>" method="post">
-			<label for="query"><p>Entrer votre recherche</label>
+			<center><label for="query"><p>Entrer votre recherche</label>
 			<input type="search" name="query" maxlength="100" size ="30" id="query"/></br>
 
 			Rechercher au niveau de :
@@ -19,7 +19,7 @@
 			<option value="Site entier">Site entier </option>
 			<!--<option value="Blog">Blog </option>
 			<option value="Pages">Pages </option>-->
-			<input type ="submit" value="Rechercher">
+			<input type ="submit" value="Rechercher"></center>
 		</form>
 		
 		<?php 
