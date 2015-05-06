@@ -3,6 +3,7 @@
 			<link type="text/css" rel="stylesheet" href="Bandeaucss.css" media="all" />
 			<title> Jamais sans ma pomme </title>
 			<meta charset="utf-8" />
+			<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>//lien pour écriture
 		</head>
 
 
