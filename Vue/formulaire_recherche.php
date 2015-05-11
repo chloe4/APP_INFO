@@ -2,13 +2,9 @@
 
 	<html>
 
-		<?php 
-			include('C:\wamp\www\APP_INFO\Modele\recherche_php.php');
-	 	?>
+		<?php include('C:\wamp\www\APP_INFO\Modele\recherche_php.php'); ?>
 
-		<?php 
-			include('simpleuh.php');
-	 	?>
+		<?php include('simpleuh.php');?>
 
 		<form action="<?php echo $_SERVER ['PHP_SELF'];?>" method="post">
 			<center><label for="query"><p>Entrer votre recherche</label>

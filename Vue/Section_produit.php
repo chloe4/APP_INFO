@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<?php session_start() ?>
 
+<!DOCTYPE html>
 	<html>
 
-		<?php 
-			include('simpleuh.php');
-		?>
+		<?php include('simpleuh.php');?>
 
 		<h1>L'ail</h1>
 		<center><img src ="http://www.calybeauty.com/medias/2010/7/ailplacement.jpg"/></center><!--son image-->

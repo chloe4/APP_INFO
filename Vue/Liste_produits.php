@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 	<html>
 
@@ -10,17 +11,16 @@
 	        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	        // On selectionne les données dont on a besoin, c'est-à-dire le mot de passe et le pseudo de l'utilisateur
-	        $sql = "SELECT `nom_a` FROM `login`.`articles` WHERE classe_a = 0";
+	        $sql = "SELECT * FROM articles";
 	        // Pas la peine de préparer la requête, pas de données récupéré depuis l'utilisateur
 	        // Du coup "query" directement
 	        $request = $db->query($sql);
 
 	        // On rentre ces données dans un tableau
 	        $request->execute(array("nom_a"));
-
- 			$tableau = $request->fetch();
+ 			
  			while ($tableau = $request->fetch()){
-        	echo "<a href=Section_produit.php>".$tableau["nom_a"]."";
+        	echo "<a href=\"Section_produit.php\">".$tableau["nom_a"]."</br>";
         }
 		?>
 
