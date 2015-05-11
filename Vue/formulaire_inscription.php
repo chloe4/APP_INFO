@@ -22,22 +22,18 @@
             Mot de passe : <input type="password" name="mot_passe_u" /></br>
             Mot de passe confirmation: <input type="password" name="motdepasse2" /></br></p>
 
-              <p> <label for="pays">Dans quel département habitez-vous jeune pousse de bambou ?</label><br />
-       <select name="pays" id="pays">
-           <optgroup label="Europe">
-               <option value="france">France</option>
-               <option value="espagne">Espagne</option>
-               <option value="italie">Italie</option>
-               <option value="royaume-uni">Royaume-Uni</option>
+              <p> Dans quel département habitez-vous jeune pousse de bambou ?<br />
+       <select name="departement" id="departement">
+           <optgroup label="Ile-de-france">
+               <option value="paris">Paris</option>
+               <option value="val-de-marne">Val-de-Marne</option>
+               
            </optgroup>
-           <optgroup label="Amérique">
-               <option value="canada">Canada</option>
-               <option value="etats-unis">Etats-Unis</option>
+           <optgroup label="Midi-Pyrénées">
+               <option value="haute-garonne">Haute-Garonne</option>
+               <option value="gers">Gers</option>
            </optgroup>
-           <optgroup label="Asie">
-               <option value="chine">Chine</option>
-               <option value="japon">Japon</option>
-           </optgroup>
+           
        </select>
    </p>
           
