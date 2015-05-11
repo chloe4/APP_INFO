@@ -1,87 +1,61 @@
 <?php
 
-/**
- * Verifie si le panier existe, le créé sinon
- * @return booleen
- */
-function creationPanier(){
-   if (!isset($_SESSION['panier'])){
-      $_SESSION['panier']=array();
-      $_SESSION['panier']['libelleProduit'] = array();
-      $_SESSION['panier']['qteProduit'] = array();
-      $_SESSION['panier']['prixProduit'] = array();
-      $_SESSION['panier']['verrou'] = false;
-   }
-   return true;
-}
-
-
-/**
- * Ajoute un article dans le panier
- * @param string $libelleProduit
- * @param int $qteProduit
- * @param float $prixProduit
- * @return void
- */
-function ajouterArticle($libelleProduit,$qteProduit,$prixProduit){
-
-   //Si le panier existe
-   if (creationPanier() && !isVerrouille())
-   {
-      //Si le produit existe déjà on ajoute seulement la quantité
-      $positionProduit = array_search($libelleProduit,  $_SESSION['panier']['libelleProduit']);
-
-      if ($positionProduit !== false)
-      {
-         $_SESSION['panier']['qteProduit'][$positionProduit] += $qteProduit ;
+   /* On vérifie si le panier existe, sinon on le créé */
+   function creationPanier(){
+      if (!isset($_SESSION['panier'])){
+         $_SESSION['panier']=array();
+         $_SESSION['panier']['libelleProduit'] = array();
+         $_SESSION['panier']['qteProduit'] = array();
+         $_SESSION['panier']['prixProduit'] = array();
+         $_SESSION['panier']['verrou'] = false;
       }
-      else
-      {
-         //Sinon on ajoute le produit
-         array_push( $_SESSION['panier']['libelleProduit'],$libelleProduit);
-         array_push( $_SESSION['panier']['qteProduit'],$qteProduit);
-         array_push( $_SESSION['panier']['prixProduit'],$prixProduit);
-      }
+      return true;
+      else{return false;}
    }
-   else
-   echo "Un problème est survenu veuillez contacter l'administrateur du site.";
-}
 
+   /* Ajoute un article dans le panier */
+   function ajouterArticle($libelleProduit,$qteProduit,$prixProduit){
 
-
-/**
- * Modifie la quantité d'un article
- * @param $libelleProduit
- * @param $qteProduit
- * @return void
- */
-function modifierQTeArticle($libelleProduit,$qteProduit){
-   //Si le panier éxiste
-   if (creationPanier() && !isVerrouille())
-   {
-      //Si la quantité est positive on modifie sinon on supprime l'article
-      if ($qteProduit > 0)
-      {
-         //Recharche du produit dans le panier
+      //Si le panier existe
+      if (creationPanier() && !isVerrouille()){
+         //Si le produit existe déjà on ajoute seulement la quantité
          $positionProduit = array_search($libelleProduit,  $_SESSION['panier']['libelleProduit']);
-
-         if ($positionProduit !== false)
-         {
-            $_SESSION['panier']['qteProduit'][$positionProduit] = $qteProduit ;
+         if ($positionProduit !== false){
+            $_SESSION['panier']['qteProduit'][$positionProduit] += $qteProduit ;
+         }
+         else{
+            //Sinon on ajoute le produit
+            array_push( $_SESSION['panier']['libelleProduit'],$libelleProduit);
+            array_push( $_SESSION['panier']['qteProduit'],$qteProduit);
+            array_push( $_SESSION['panier']['prixProduit'],$prixProduit);
          }
       }
-      else
-      supprimerArticle($libelleProduit);
+      else{
+         echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+      }
    }
-   else
-   echo "Un problème est survenu veuillez contacter l'administrateur du site.";
-}
 
-/**
- * Supprime un article du panier
- * @param $libelleProduit
- * @return unknown_type
- */
+   /* Modifie la quantité d'un article */
+   function modifierQTeArticle($libelleProduit,$qteProduit){
+      //Si le panier existe
+      if (creationPanier() && !isVerrouille()){
+         //Si la quantité est positive on modifie sinon on supprime l'article
+         if ($qteProduit > 0){
+         //Recharge du produit dans le panier
+            $positionProduit = array_search($libelleProduit,  $_SESSION['panier']['libelleProduit']);
+            if ($positionProduit !== false){
+               $_SESSION['panier']['qteProduit'][$positionProduit] = $qteProduit;
+            }
+         }
+         else{
+         supprimerArticle($libelleProduit);
+         }
+      else{
+         echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+      }
+   }
+
+/* Supprime un article du panier */
 function supprimerArticle($libelleProduit){
    //Si le panier existe
    if (creationPanier() && !isVerrouille())
