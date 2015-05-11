@@ -19,7 +19,9 @@
 	        $request->execute(array("nom_a"));
 
  			$tableau = $request->fetch();
-        	echo "<a href=\"".$tableau["nom_a"].".php\">".$tableau["nom_a"]."";
+ 			while ($tableau = $request->fetch()){
+        	echo "<a href=Section_produit.php>".$tableau["nom_a"]."";
+        }
 		?>
 
 <div id="liste2" >

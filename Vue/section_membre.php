@@ -8,9 +8,20 @@
 
         <?php
             // On démarre la session (ceci est indispensable dans toutes les pages de notre section membre)
-            session_start ();
+            //session_start ();
+            $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
+        
+            $sql ="SELECT `identifiant_u` FROM utilisateur";
+            $request = $db->query($sql);
+
+            // On rentre ces données dans un tableau
+            $request->execute(array("identifiant_u"));
+
+            $tableau = $request->fetch();
+        
             // On récupère nos variables de session
-            if (isset($_SESSION['identifiant_u']) && isset($_SESSION['mot_passe_u'])) {
+            if (isset($_SESSION['identifiant_u'])) {
+
                 echo "<h3>Bonjour ".$_SESSION['identifiant_u']."</h3>";
                 echo '</br>';
                 // On affiche un lien pour fermer notre session
@@ -31,10 +42,6 @@
         </p>
 
         <div class ="Fairemescourses"> <a href ="panier.html"/>Faire mes courses</a></div>
-        
-        
-
-
 
         <?php
             include('C:\wamp\www\APP_INFO\Modele\ajout_php.php'); 
@@ -48,9 +55,6 @@
                  
             <!--On définit un bouton permettant d'envoyer les informations-->
             <input type="submit" name="envoyer" Value="Ajout d'article"/></br>
-
-
-
 
         <?php 
             include('bandeau_bas.php'); 

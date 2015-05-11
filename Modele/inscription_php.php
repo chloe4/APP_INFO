@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 //Vérification si nom, prenom, datedenaissance, adresse, telephone, pseudo, mot de passe et email existe !
 	if (isset($_POST["nom_u"])&&
@@ -46,7 +46,7 @@ session_start();
 			echo $e->getMessage();
 		}
 
-		session_start ();
+		
             $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
          	$_SESSION['mot_passe_u'] = $_POST['mot_passe_u'];
            	header ('location: C:\wamp\www\APP_INFO\Vue\section_membre.php');

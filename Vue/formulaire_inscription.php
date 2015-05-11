@@ -1,18 +1,14 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 
     <html>
 
+        <?php include('simpleuh.php'); ?>
 
-        <?php 
-            include('simpleuh.php'); 
-        ?>
-
-            
         <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
         vers la base de données-->
-        <?php
-            include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); 
-        ?>
+        <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
 
         <!--On définit tous les champs nécessaires à l'inscription-->
         <form action="section_membre.php" method="post">
@@ -31,9 +27,6 @@
             
         </form>
     
-        <?php 
-            include('bandeau_bas.php'); 
-        ?>
-
+        <?php include('bandeau_bas.php'); ?>
 
     </html>

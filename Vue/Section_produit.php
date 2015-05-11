@@ -3,7 +3,7 @@
 	<html>
 
 		<?php 
-			include('Vue/simpleuh.php');
+			include('simpleuh.php');
 		?>
 
 		<h1>L'ail</h1>
