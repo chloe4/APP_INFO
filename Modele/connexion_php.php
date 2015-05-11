@@ -19,8 +19,8 @@
         
         // On recurpère ces données dans le tableau sous la forme d'une chaine de caractères
         $tableau = $request->fetch();
-        echo $tableau["identifiant_u"].'</br>';
-        echo $tableau["mot_passe_u"].'</br>';
+        //echo $tableau["identifiant_u"].'</br>';
+        //echo $tableau["mot_passe_u"].'</br>';
         $pseudo = $tableau["identifiant_u"];
         $motdepasse = $tableau["mot_passe_u"];
 
@@ -29,11 +29,9 @@
                 echo "Votre mot de passe ou votre identifiant est erroné. Veuillez réessayer !";
             }
             else { //Vous avez été reconnu, nous pouvons démarrer la session
-                echo "Vous êtes bien logué";
-                session_start ();
-                $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
-            	$_SESSION['mot_passe_u'] = $_POST['mot_passe_u'];
-            	header ('location: C:\wamp\www\APP_INFO\Vue\section_membre.php');
+                $_SESSION['identifiant_u'] = $pseudo;
+                echo "<h3>".$pseudo.", Vous êtes bien connecté.</h3>";
+            	
             }
     }
 ?>

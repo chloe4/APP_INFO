@@ -11,7 +11,6 @@
 		isset($_POST["motdepasse2"])&& $_POST["mot_passe_u"] == $_POST["motdepasse2"]
 		)
 	{
-
 		// On se connecte à la base de données via la fonction PDO
 		$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
 		
@@ -35,15 +34,13 @@
 				"mot_passe_u" => sha1($_POST["mot_passe_u"])
 			));
 		} 
-		catch(PDOException $e) {
-			echo $e->getMessage();
-		}
+		catch(PDOException $e) {echo $e->getMessage();}
+
             $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
-         	$_SESSION['mot_passe_u'] = $_POST['mot_passe_u'];
-           	header ('location: C:\wamp\www\APP_INFO\Vue\section_membre.php');
+			    echo "<h3>".$_SESSION['identifiant_u'].", Vous êtes désormais inscrite sur <em>Jamais sans ma pomme</em></h3>";
+                echo '</br>';
+    }
 
-	}
-
-
+	
 
 ?>
