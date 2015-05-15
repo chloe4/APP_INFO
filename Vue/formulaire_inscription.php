@@ -22,20 +22,18 @@
             Mot de passe : <input type="password" name="mot_passe_u" /></br>
             Mot de passe confirmation: <input type="password" name="motdepasse2" /></br></p>
 
-              <p> Dans quel département habitez-vous jeune pousse de bambou ?<br />
-       <select name="departement" id="departement">
-           <optgroup label="Ile-de-france">
-               <option value="paris">Paris</option>
-               <option value="val-de-marne">Val-de-Marne</option>
-               
-           </optgroup>
-           <optgroup label="Midi-Pyrénées">
-               <option value="haute-garonne">Haute-Garonne</option>
-               <option value="gers">Gers</option>
-           </optgroup>
-           
-       </select>
-   </p>
+            <p> Dans quel département habitez-vous jeune pousse de bambou ?<br/>
+              <select name="localisation_u" id="departement">
+                <optgroup label="Ile-de-france">
+                  <option value="paris">Paris</option>
+                  <option value="val-de-marne">Val-de-Marne</option>    
+                </optgroup>
+                <optgroup label="Midi-Pyrénées">
+                 <option value="haute-garonne">Haute-Garonne</option>
+                 <option value="gers">Gers</option>
+                </optgroup>
+              </select>
+          </p>
           
           <!-- zone pour cocher truc d'utilisation & accepter (ou pas) de recevoir mail d'info
            <form method="post" action="traitement.php">
