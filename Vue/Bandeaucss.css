@@ -78,6 +78,8 @@ table,td{border: 2px solid #331f1d; margin-left:300px;}
 /* fond */
 #fond{background-repeat:no-repeat; background-image:url(fond_ecran_qui_plait_a_alice.jpg); background-size: cover;}
 
+#logo{width:100px; height:50px;}
+
 /*bandeau du bas*/
 #footer{
     clear:both; position: relative; bottom: -20px; height: 75px;
