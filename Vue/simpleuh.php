@@ -15,8 +15,8 @@
 				<li><a href="http://www.mangerbouger.fr/IMG/pdf/inpes_manger_bouger_pdf_produits_saison.pdf">Calendrier</a></li>
 				<li><a href="#">Acheter/Echanger</a>
 					<ul>
-						<li><a href="faire_courses.php#">Nos producteurs</a></li>
-						<li><a href="Liste_produits.php#">Nos produits</a></li>		
+						<li><a href="faire_courses.php">Nos producteurs</a></li>
+						<li><a href="Liste_produits.php">Nos produits</a></li>		
 					</ul>
 				</li>
 				<li><a href="#">Des infos !</a>
