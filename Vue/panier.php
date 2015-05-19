@@ -19,14 +19,18 @@
 				<td>Prix Unitaire</td>
 				<td>Action</td>
 			</tr>
-
+		</table></br>
 			<?php
 				include('C:\wamp\www\APP_INFO\Controleur\tableau_panier.php')
 			?>
-
-		</table>
 	</form>
 		
+	<center><input type ="submit" value="Continuer mes achats"/>
+			<input type ="submit" value="Acheter"/>
+			<input type ="submit" value="Echanger"/>
+	</center>
+
+
 	<?php 
 		include('bandeau_bas.php'); 
 	 ?>
