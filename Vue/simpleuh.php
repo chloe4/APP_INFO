@@ -32,14 +32,15 @@
 					</ul>
 				</li>
 				<li><a href="formulaire_recherche.php">Rechercher</a></li>
-				<li><a href="#">Nous rejoindre !</a>
+				<li><a href="#">Nous rejoindre</a>
 					<ul>
 						<li><a href="formulaire_inscription.php">S'inscrire</a></li>
 						<li><a href="formulaire_connexion.php#">Se connecter</a></li>			
 					</ul>
 				</li>
 			</ul>
-							
+			<img id="logo" src="Logo.png"/>	
+						
 			<h2>Jamais sans ma pomme</h2>
 			<h3>So fresh , so French! </h3>
 </header>
