@@ -5,9 +5,17 @@
 
 		<?php include('simpleuh.php');?>
 
-		<h1>L'ail</h1>
-		<center><img src ="http://www.calybeauty.com/medias/2010/7/ailplacement.jpg"/></center><!--son image-->
+		<?php include('C:\wamp\www\APP_INFO\Modele\section_produit_php.php')
+			
+		?>
 
+		
+        
+		<center>
+			<h1><?php echo $nom; ?> </h1>
+			<img src="<?php echo $photo;?>">
+		</center>
+		<p><?php echo $description;?></p>
 		<div id="barre2" style="margin-left: 220px">
 			<div id="liste2" > <!--liste pour énumérer les qualif du produit-->
 		 		<ul>

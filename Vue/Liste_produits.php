@@ -19,12 +19,10 @@
 	        // On rentre ces données dans un tableau
 	        $request->execute(array("nom_a"));
  			while ($tableau = $request->fetch()){
-        		echo "<a href=\"Section_produit.php\">".$tableau["nom_a"]."</br>";
+ 				$id = $tableau['nom_a'];
+        		echo "<a href=\"Section_produit.php?id=$id\">".$tableau["nom_a"]."</br>";
         	}
-        	$_SESSION['nom_a']=$tableau["nom_a"];
 		?>
-		
-
 
 <div id="liste2" >
 	

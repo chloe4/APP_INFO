@@ -16,7 +16,7 @@
    /* Ajoute un article dans le panier */
    function ajouterArticle($libelleProduit,$qteProduit,$prixProduit){
 
-      //Si le panier existe
+      //Si le panier existe et si le panier est terminé (vérouillé)
       if (creationPanier() && !isVerrouille()){
          //Si le produit existe déjà on ajoute seulement la quantité
          $positionProduit = array_search($libelleProduit,  $_SESSION['panier']['libelleProduit']);
@@ -37,7 +37,7 @@
 
    /* Modifie la quantité d'un article */
    function modifierQTeArticle($libelleProduit,$qteProduit){
-      //Si le panier existe
+      //Si le panier existe et si le panier est terminé (vérouillé)
       if (creationPanier() && !isVerrouille()){
          //Si la quantité est positive on modifie sinon on supprime l'article
          if ($qteProduit > 0){
@@ -58,7 +58,7 @@
 
    /* Supprime un article du panier */
    function supprimerArticle($libelleProduit){
-      //Si le panier existe
+      //Si le panier existe et si le panier est terminé (vérouillé)
       if (creationPanier() && !isVerrouille()){
          //Nous allons passer par un panier temporaire
          $tmp=array();
