@@ -11,7 +11,7 @@
         <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
 
         <!--On définit tous les champs nécessaires à lsa page membre-->
-<center><form method="post" action="section_membre.php">
+<center><form method="post" action="panier.php">
 
 
   <!--QUantité du produit -->

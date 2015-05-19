@@ -19,7 +19,7 @@
 			</div>
 		</div>
 
-		<center><input type ="submit" value="Acheter">
+		<center><a href="Acheter_Echanger.php"><input type ="submit" value="Sélectionner"></a>
 		</center>
 
 		
