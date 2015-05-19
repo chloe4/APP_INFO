@@ -20,7 +20,6 @@
 		</div>
 
 		<center><input type ="submit" value="Acheter">
-			<input type ="submit" value="Echanger">
 		</center>
 
 		

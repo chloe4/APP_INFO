@@ -7,11 +7,9 @@
          $_SESSION['panier']['libelleProduit'] = array();
          $_SESSION['panier']['qteProduit'] = array();
          $_SESSION['panier']['prixProduit'] = array();
+         // verrou permet deverouiller toute action sur le panier, à activer si on passe en mode paiement
          $_SESSION['panier']['verrou'] = false;
       return true;
-      }
-      else{
-         echo "erreur";
       }
    }
 
