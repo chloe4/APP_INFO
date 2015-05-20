@@ -18,10 +18,22 @@
 
       //Si le panier existe et si le panier est terminé (vérouillé)
       if (creationPanier() && !isVerrouille()){
-         //Si le produit existe déjà on ajoute seulement la quantité
-         $positionProduit = array_search($libelleProduit,  $_SESSION['panier']['libelleProduit']);
-         if ($positionProduit !== false){
-            $_SESSION['panier']['qteProduit'][$positionProduit] += $qteProduit ;
+         $requete = $bdd->query('SELECT nom_a, quantite, prix FROM articles WHERE nom_a =\'' . $libelleProduit . ' \'');
+         if ($positionProduit = $requete->fetch()){
+            $qteinitial = $_GET['quantite'];
+            $qte = $qteinitial + $qteProduit;
+            $rep = $bdd->prepare('INSERT INTO panier (quantite) VALUES (?)');
+            $rep->execute((array($qte)));
+         }
+         else{
+            $req = $bdd->prepare('INSERT INTO panier (produit, quantite, prix) VALUES (?, ?, ?)');
+            $req->execute((array($libelleProduit, $qteProduit, $prixProduit)));
+         }
+
+      //Si le produit existe déjà on ajoute seulement la quantité
+      $positionProduit = array_search($libelleProduit,  $_SESSION['panier']['libelleProduit']);
+      if ($positionProduit !== false){
+         $_SESSION['panier']['qteProduit'][$positionProduit] += $qteProduit ;
          }
          else{
             //Sinon on ajoute le produit

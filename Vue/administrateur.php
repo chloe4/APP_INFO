@@ -1,10 +1,9 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 
 	<html>
 
-		<?php 
-	include('simpleuh.php'); 
-	 ?>
+		<?php include('simpleuh.php'); ?>
 							
 			<h2>Espace administrateur</h2>
 			<h3>So fresh , so French! </h3>
@@ -27,9 +26,6 @@
 			
 			<div id="trait"></div>
 
-			<?php 
-				include('bandeau_bas.php'); 
-	 		?>
+			<?php include('bandeau_bas.php'); ?>
 
 	</html>
-

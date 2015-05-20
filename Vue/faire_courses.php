@@ -1,10 +1,9 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 
 	<html>
 
-		<?php 
-			include('simpleuh.php'); 
-		?>
+		<?php include('simpleuh.php'); ?>
 		
 
 		<h1> Localisez vous </h1>
@@ -20,8 +19,6 @@
 		</div>
 		
 
-		<?php 
-			include('bandeau_bas.php'); 
-		?>
+		<?php include('bandeau_bas.php'); ?>
 		
 	</html>

@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html><!--page de contact-->
 
 	<html>

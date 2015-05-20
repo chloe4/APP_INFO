@@ -1,6 +1,6 @@
 <?php session_start() ?>
 <!DOCTYPE html>
-	
+
 	<html>
 
 		<?php include('C:\wamp\www\APP_INFO\Vue\simpleuh.php'); ?>
