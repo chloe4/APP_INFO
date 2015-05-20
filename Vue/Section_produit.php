@@ -3,11 +3,10 @@
 <!DOCTYPE html>
 	<html>
 
-		<?php include('simpleuh.php');?>
-
-		<?php include('C:\wamp\www\APP_INFO\Modele\section_produit_php.php')
-			
-		?>
+		<?php 
+			include('simpleuh.php');
+		 	include('C:\wamp\www\APP_INFO\Modele\section_produit_php.php') 
+		 ?>
 
 		
         

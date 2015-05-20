@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 	<html>
-
+<?php include('C:\wamp\www\APP_INFO\Modele\redirection.php'); ?>
 		<?php include('simpleuh.php'); ?>
 		
 		<section id="mesproducteursfavoris">

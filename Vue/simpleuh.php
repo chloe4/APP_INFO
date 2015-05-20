@@ -21,11 +21,25 @@
 				<li><a href="#">Acheter/Echanger</a>
 					<ul>
 						<li><a href="faire_courses.php">Nos producteurs</a></li>
-						<li><a href="Liste_produits.php#">Nos produits</a></li>		
+						<li><a href="Liste_produits.php">Nos produits</a></li>		
 					</ul>
 				</li>
+<<<<<<< HEAD
 				<li><a href="panier.php">Mon panier</a>
 
+=======
+				<li><a href="#">Des infos !</a>
+					<ul>
+						<li><a href="Qui_sommes_nous.php#">Qui sommes-nous</a></li>
+						<li><a href="Contact.php#">Contact</a></li>		
+					</ul>
+				</li>
+				<li><a href="#">Mon panier</a>
+					<ul>
+						<li><a href="panier.php">En cours</a></li>
+						<li><a href="#">Avant</a></li>	
+					</ul>
+>>>>>>> origin/master
 				</li>
 				<li><a href="formulaire_recherche.php">Rechercher</a></li>
 				<li><a href="#">Nous rejoindre</a>
@@ -33,6 +47,7 @@
 						<li><a href="formulaire_inscription.php">S'inscrire</a></li>
 						<li><a href="formulaire_connexion.php#">Se connecter</a></li>			
 					</ul>
+<<<<<<< HEAD
 				</li>
 				<li><a href="#"><?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?></a>
 					<ul>
@@ -40,6 +55,10 @@
 						<li><a href="#">Avant</a></li>	
 					</ul>
 				</li>
+=======
+				</li> 
+				<?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?>
+>>>>>>> origin/master
 			</ul>
 		</nav>
 
