@@ -14,10 +14,10 @@
 		</div>
 			
 		<div><!--les images cliquables-->
-			<center><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/90-200.png"/>
-				<p style="font-family:across the stars "> OU BIEN </p>
-				<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/52971-200.png"/>
-			</center>
+			<p>Vous pouvez nous contacter par mail </p>
+				<img src="enveloppe.png"/>
+			<p> OU BIEN </p>
+			<p>Vous pouvez nous contacter en nous appelant</p>	<img src="telephone.jpg"/>
 		</div>
 			
 		<?php 
