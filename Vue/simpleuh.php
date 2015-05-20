@@ -38,7 +38,13 @@
 						<li><a href="formulaire_connexion.php#">Se connecter</a></li>			
 					</ul>
 				</li>
-			<?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?>
+				<li><a href="#"><?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?></a>
+					<ul>
+						<li><a href="panier.php">En cours</a></li>
+						<li><a href="#">Avant</a></li>	
+					</ul>
+				</li>
+			
 			</ul>
 
 
