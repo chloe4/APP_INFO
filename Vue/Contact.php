@@ -14,10 +14,12 @@
 		</div>
 			
 		<div><!--les images cliquables-->
-			<p>Vous pouvez nous contacter par mail </p>
+			<center>
+				<p>Vous pouvez nous contacter par mail </p>
 				<img src="enveloppe.png"/>
 			<p> OU BIEN </p>
 			<p>Vous pouvez nous contacter en nous appelant</p>	<img src="telephone.jpg"/>
+		</center>
 		</div>
 			
 		<?php 
