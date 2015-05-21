@@ -8,7 +8,7 @@
 
 
 		<body id="fond"/>
-
+			<div id="container">
 			<header>
 			<ul id="menu">
 				<li><a href="Bandeau.php">Accueil</a></li>
