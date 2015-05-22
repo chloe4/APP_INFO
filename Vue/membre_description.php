@@ -11,7 +11,7 @@
         <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
 
         <!--On définit tous les champs nécessaires à lsa page membre-->
-		<form method="post" action="section_membre.php">
+		<form method="post" action="Bandeau.php">
 
 	  		<!--Produits à vendre-->
 	       	<p>Cochez les aliments que vous voulez vendre en fruit :<br/>
@@ -26,18 +26,29 @@
         <?php include('ajout_php.php'); ?>
 
         <!--On définit tous les champs nécessaires à l'ajout de fruits et de légumes-->
-        <form action="Nos_produits.php" method="post">
+        
            
             Article : <input type="text" name="nom_a" /></br>
             Variété : <input type="text" name="varietes_a" /></br>
             Type de produit ! 
             Commentaires : <input type="text" name="commentaires_a" /></br>
                  
-            <!--On définit un bouton permettant d'envoyer les informations-->
-            <input type="submit" name="envoyer" Value="Ajout d'article"/></br>
+            <!--On définit un bouton permettant d'envoyer les informations-
+            <input type="submit" name="envoyer" Value="Ajout d'article"/></br> CHLOE j'ai mis en commentaire ce bouton car les deux d'en bas servent à ca déja -->
+            
+        
+    <!--Petite description sur la personne-->
+           
+                
+                    <p>Parlez nous de vous</p><br/>
+                    <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">Etes vous une patate ?!</textarea>       
+                </p>
+            
+           
+            <input type="submit" value="Enregistrer"/>
+            <input type="submit" value="Modifier" /></br>
             
         </form>
-    
 
         <?php 
             include('bandeau_bas.php'); 
@@ -49,19 +60,5 @@
 
 
 
-	   		<!--Petite description sur la personne-->
-			<form method="post" action="section_membre.php">
-		   		<p>
-		       		<p>Parlez nous de vous</p><br/>
-		       		<textarea name="ameliorer" id="ameliorer" rows="10" cols="50">Etes vous une patate ?!</textarea>       
-		   		</p>
-			</form>
-           
-        	<input type="submit" value="Enregistrer"/>
-        	<input type="submit" value="Modifier" /></br>
-            
-        </form>
+	   		
     
-        <?php include('bandeau_bas.php'); ?>
-
-    </html>

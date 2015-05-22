@@ -16,7 +16,7 @@
             <!--On définit tous les champs nécessaires à la connexion-->
             </form>
 
-        <form action="" method="post">
+        <form action="Bandeau.php" method="post">
             <p> Pseudo : <input type="text" name="identifiant_u"/></br>
                 Mot de passe : <input type="password" name="mot_passe_u" /></br>
             </p>
