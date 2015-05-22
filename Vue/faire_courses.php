@@ -28,7 +28,7 @@
 
 
 
-		<h1> Localisez vous </h1>
+		<h1>  <a href="carte.html">Géolocalisez-vous</a>  </h1>
 		<div id="mesproducteursfavoris">
 			<h4> Mes producteurs favoris </h4>
 			<ul> 

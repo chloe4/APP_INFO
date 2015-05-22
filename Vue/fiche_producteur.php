@@ -24,7 +24,7 @@
 	<li style="color:black;font-family: 'Satisfy', cursive;"> des courgettes</li>
 </ul>
 
- <a href ="file:///Users/caroline/Desktop/fairemescourses.html"/><p style="font-family: 'Satisfy', cursive;"/>Faire mes courses
+ <a href="Acheter_Echanger.php"/><p style="font-family: 'Satisfy', cursive;"/>Faire mes courses
 
 	<?php 
 				include('bandeau_bas.php'); 
