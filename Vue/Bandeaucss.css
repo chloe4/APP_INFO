@@ -6,8 +6,9 @@
 
 /*titre*/
 
-h1,h2,h3,h4,h5,p,#liste2,#description,#footer{font-family: 'Satisfy', cursive; color:black;}
+h1,h2,h4,h5,p,#liste2,#description,#footer{font-family: 'Satisfy', cursive; color:black;}
 
+h3{font-family: 'Satisfy', cursive; color:white;}
 
 h1{font-size:30px;}
 h2{font-size: 40px; text-align:center;}
