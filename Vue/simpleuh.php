@@ -44,6 +44,6 @@
 
 
 							
-			<h2>Jamais sans ma pomme</h2>
-			<h1>So fresh , so French! </h1>
+			<h2><img src="Logo.png"/></h2>
+			
 </header>
