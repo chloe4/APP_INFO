@@ -38,11 +38,12 @@
 						<li><a href="formulaire_connexion.php#">Se connecter</a></li>			
 					</ul>
 				</li> 
+				
 				<?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?>
 			</ul>
 
 
 							
-			<h2>Jamais sans ma pomme</h2>
-			<h3>So fresh , so French! </h3>
+			<h2><img src="Logo.png"/></h2>
+			
 </header>

@@ -6,8 +6,9 @@
 
 /*titre*/
 
-h1,h2,h3,h4,h5,p,#liste2,#description,#footer{font-family: 'Satisfy', cursive; color:black;}
+h1,h2,h4,h5,p,#liste2,#description,#footer{font-family: 'Satisfy', cursive; color:black;}
 
+h3{font-family: 'Satisfy', cursive; color:white;}
 
 h1{font-size:30px;}
 h2{font-size: 40px; text-align:center;}
@@ -31,7 +32,7 @@ a{color:black; text-decoration:none;}
 a:hover{color:#00FF00;}
 
 /*corps du texte*/
-p{font-size:30px;}
+p{font-size:18px;}
 ul{font-size:15px;}
 
 
@@ -69,11 +70,11 @@ ul{font-size:15px;}
 /*items pour fruits/légumes */
 #liste2{font-size: 13px;}
 
-/* la taille des images*/
-img{width:170px; height:170px;}
+ /*la taille des images*/
+img{width:200px; height:150px;}
 
-/* style du tableau3*3 */
-table,td{border: 2px solid #331f1d; margin-left:300px;}
+/* style du tableau3*3 
+table,td{border: 2px solid #331f1d; }*/
 
 /* fond */
 #fond{background-repeat:no-repeat; background-image:url(Images_Deco/fond_ecran_qui_plait_a_alice.jpg); background-size: cover; text-align:center;}
@@ -93,9 +94,12 @@ table,td{border: 2px solid #331f1d; margin-left:300px;}
 }
 
 #trait{border-top : 1px solid #000; width : 500px;}
-/*Centrer le tableau d'accueil*/
-#centrer_tableau{
-	margin:0;
-	padding:0;
-	text-align:center;
+
+
+#div_horloge{
+	margin-left:58;
+	font-family: 'Satisfy', cursive; 
+	color:black;
+	font-size:30px;
+
 }
