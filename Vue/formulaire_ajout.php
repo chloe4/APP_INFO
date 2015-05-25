@@ -4,6 +4,7 @@
     <html>
 
         <?php include('simpleuh.php'); ?>
+        <?php include('C:\wamp\www\APP_INFO\Modele\redirection.php'); ?>
 
         <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
         vers la base de données-->

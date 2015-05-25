@@ -44,6 +44,6 @@
 
 
 							
-			<h2><img src="Logo.png"/></h2>
+			<h2><img src="Images_Deco/Logo.png"/></h2>
 			
 </header>
