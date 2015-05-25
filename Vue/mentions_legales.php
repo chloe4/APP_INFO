@@ -7,7 +7,7 @@
 			include('simpleuh.php'); 
 	 	?>
 		
-		<img src="Logo.png"/>
+		<img src="Images_Deco/Logo.png"/>
 
 
 		<div id="liste2" >

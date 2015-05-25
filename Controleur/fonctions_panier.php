@@ -4,9 +4,9 @@
    function creationPanier(){
       if (!isset($_SESSION['panier'])){
          $_SESSION['panier']=array();
-         $_SESSION['panier']['libelleProduit'] = array();
-         $_SESSION['panier']['qteProduit'] = array();
-         $_SESSION['panier']['prixProduit'] = array();
+         $_SESSION['panier']['nom_a'] = array();
+         $_SESSION['panier']['quantite'] = array();
+         $_SESSION['panier']['prix'] = array();
          // verrou permet deverouiller toute action sur le panier, à activer si on passe en mode paiement
          $_SESSION['panier']['verrou'] = false;
       return true;
@@ -14,11 +14,11 @@
    }
 
    /* Ajoute un article dans le panier */
-   function ajouterArticle($libelleProduit,$qteProduit,$prixProduit){
+   function ajouterArticle($nom_a,$quantite,$prix){
 
       //Si le panier existe et si le panier est terminé (vérouillé)
       if (creationPanier() && !isVerrouille()){
-         $requete = $bdd->query('SELECT nom_a, quantite, prix FROM articles WHERE nom_a =\'' . $libelleProduit . ' \'');
+         $requete = $bdd->query('SELECT nom_a, quantite, prix FROM articles WHERE nom_a =\'' . $nom_a . ' \'');
          if ($positionProduit = $requete->fetch()){
             $qteinitial = $_GET['quantite'];
             $qte = $qteinitial + $qteProduit;
