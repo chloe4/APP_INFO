@@ -35,7 +35,7 @@
 				<li><a href="formulaire_inscription.php">S'inscrire</a>
 
 				</li>
-				<li><a href="#"><?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?>Se connecter</a>
+				<li><a href="formulaire_connexion.php">Se connecter</a>
 					
 
 				</li> 
@@ -44,9 +44,5 @@
 
 			</ul>
 		</nav>
-<?php 
-include ('bandeau_bas.php'); ?>
-
-
 			
 </header>

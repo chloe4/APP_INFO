@@ -1,7 +1,7 @@
 <?php 
 
     // On se connecte à la base de données via la fonction PDO
-    $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","root");
+    $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // On selectionne les données dont on a besoin, c'est-à-dire le mot de passe et le pseudo de l'utilisateur
