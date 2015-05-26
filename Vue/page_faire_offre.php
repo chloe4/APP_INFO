@@ -10,12 +10,26 @@
         vers la base de données-->
         <?php include('C:\wamp\www\APP_INFO\Modele\page_faire_offre_php.php'); ?>
 
+
+<h1> Page d'offre de Fruits & Légumes</h1>
         <!--On définit tous les champs nécessaires à l'inscription-->
+        
         <form action="" method="post">
+        
           <?php include('C:\wamp\www\APP_INFO\Modele\liste_bdd.php'); ?>
-            Quantité: <input type="number" value="1" max="50" min="0" step="1" name="quantite_initiale_lo" /></br>
-            Prix unitaire : <input type="int" name="prix_unitaire_lo" /></br>
-          </p>
+        
+           <p> Type de produit :<select name="type_a" id="type">
+                                    <option value="fruit">Fruit</option>
+                                    <option value="legume">Légumes</option>
+                                </select></br>
+                Nom du produit : <input type="checkbox" name="nom_a" />Banane</br>
+                Quantité : <input type="number" value="1" max="50" min="0" step="1" name="quantite_initiale_lo"><br />
+                Variété du produit : <input type="int" name="varietes_a" /></br>
+                Prix : <input type="number" value="1" max="50" min="0" step="0,25" name="prix_unitaire_lo"><br />
+                Commentaire sur le produit : <input type="text" name="description_a" /></br>
+            </p>
+                 
+            
 
             <!--On définit un bouton permettant d'envoyer les informations-->
             <input type="submit" name="envoyer" Value="Faire une offre"/></br>

@@ -25,7 +25,13 @@
             Email : <input type="email" name="email_u" /></br>
             Pseudo : <input type="text" name="identifiant_u"/></br>
             Mot de passe : <input type="password" name="mot_passe_u" /></br>
-            Mot de passe confirmation: <input type="password" name="motdepasse2" /></br></p>
+            Mot de passe confirmation: <input type="password" name="motdepasse2" /></br>
+            Vous étes :<select name="type_u" id="type">
+                                    <option value="vendeur">Vendeur</option>
+                                    <option value="acheteur">Acheteur</option>
+                                    <option value="acheteur et vendeur">Acheteur & Vendeur</option>
+                                  
+                                </select></br></p>
 
             <p> Dans quel département habitez-vous jeune pousse de bambou ?<br/>
               <select name="localisation_u" id="departement">
