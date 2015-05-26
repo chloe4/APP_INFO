@@ -12,7 +12,7 @@
 			<div id="container">
 			<header>
 				<div id="logo">
-					<a href="Bandeau.php"><img id="logo2"src="Logo.png"></a>
+					<a href="Bandeau.php"><img id="logo2"src="Images_Deco/Logo.png"></a>
 				</div>
 		<nav>
 			<ul id="menu">
@@ -46,7 +46,5 @@
 
 
 
-							
-			<h2><img src="Images_Deco/Logo.png"/></h2>
 			
 </header>
