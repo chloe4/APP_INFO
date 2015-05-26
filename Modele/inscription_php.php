@@ -13,7 +13,7 @@
 		)
 	{
 		// On se connecte à la base de données via la fonction PDO
-		$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","root");
+		include('connect_db.php');
 		
 		//echo "a"; (pour faire des tests)
 		$sql = "INSERT INTO `jsmp`.`utilisateur` (`nom_u`,`prenom_u`,`date_naissance_u`,`telephone_u`,`localisation_u`,`email_u`,`identifiant_u`,`mot_passe_u`) VALUES (:nom_u,:prenom_u,:date_naissance_u,:telephone_u,:localisation_u,:email_u,:identifiant_u,:mot_passe_u)";

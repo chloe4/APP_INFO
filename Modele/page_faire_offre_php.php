@@ -10,7 +10,7 @@
 		$quantite = $_POST["quantite_initiale_lo"];
 		$prix = $_POST["prix_unitaire_lo"];
 		// On se connecte à la base de données via la fonction PDO
-		$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","root");
+		include('connect_db.php');
 		$id = $_SESSION['identifiant_u'];
 
 		$sqlprod = "SELECT reference_a FROM articles WHERE nom_a = :nom_a AND varietes_a = :varietes_a";
