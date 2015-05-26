@@ -11,7 +11,12 @@
         <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
 
         <!--On définit tous les champs nécessaires à l'inscription-->
+
+        <section>
+        <form action="" method="post">
+
         <form action="membre_description.php" method="post">
+
 
             <p> Nom : <input type="text" name="nom_u" /></br>
             Prénom : <input type="text" name="prenom_u" /></br>
@@ -50,6 +55,7 @@
             <input type="submit" name="envoyer" Value="S'inscrire"/></br>
             
         </form>
+        </section>
     
         <?php include('bandeau_bas.php'); ?>
 
