@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<link type="text/css" rel="stylesheet" href="Bandeaucss.css" media="all" />
 	<html>
 
 
