@@ -1,0 +1,4 @@
+ /*la taille des images*/
+img{width:200px; height:100px;}
+/* fond */
+#fond{background-repeat:no-repeat; background-image:url(fond_ecran_qui_plait_a_alice.jpg); background-size: cover; text-align:center;}
