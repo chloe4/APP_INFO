@@ -22,7 +22,7 @@
 					</tr>												
 				</tbody>			
 			</table></center>
->>>>>>> origin/master
+
 
 			
 <!--code pour horloge-->

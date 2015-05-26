@@ -40,7 +40,8 @@
 
 			</ul>
 		</nav>
-
+<?php 
+include ('bandeau_bas.php'); ?>
 
 
 			
