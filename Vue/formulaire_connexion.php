@@ -14,9 +14,9 @@
             <p> Si vous n'êtes pas inscrit , créez votre compte
             <input type="submit" name="envoyer" Value="s'inscrire"/></br></p>
             <!--On définit tous les champs nécessaires à la connexion-->
-            </form>
+        </form>
 
-        <form action=" " method="post">
+        <form action="" method="post">
             <p> Pseudo : <input type="text" name="identifiant_u"/></br>
                 Mot de passe : <input type="password" name="mot_passe_u" /></br>
             </p>

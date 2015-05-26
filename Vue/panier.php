@@ -32,8 +32,5 @@
 	</center>
 
 
-	<?php 
-		include('bandeau_bas.php'); 
-	 ?>
 
 </html>

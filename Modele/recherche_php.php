@@ -6,18 +6,18 @@
 		//si l'utilisateur rentre qqchose on traite sa requete
 		//on rend clean la requète de l'utilisateur 
 		$query = preg_replace("#[^a-z ?0-9]#i","",$_POST['query']);
-
+		$test = $_POST['query'];
 		if($_POST['filtre']=="Site entier"){
-			$sql="(SELECT nom_a AS title FROM articles WHERE (nom_a LIKE ? AND type_a == 0) OR description_a LIKE ?) UNION 
-			(SELECT nom_a AS title FROM articles WHERE (nom_a LIKE ? AND type_a == 1) OR description_a LIKE ?)";
+			$sql="(SELECT nom_a AS title FROM articles WHERE (nom_a LIKE '$test' AND type_a == 0) OR description_a LIKE '$test') UNION 
+			(SELECT nom_a AS title FROM articles WHERE (nom_a LIKE '$test' AND type_a == 1) OR description_a LIKE '$test')";
 
 			// SELECT...FROM ect : recherche champ
 		} 
 		else if($_POST['filtre']=="Fruit"){
-			$sql="SELECT nom_a AS title FROM articles WHERE (nom_a LIKE ? AND type_a == 0) OR description_a LIKE ?";
+			$sql='SELECT nom_a AS title FROM articles WHERE (nom_a LIKE "$test" AND type_a == 0) OR description_a LIKE $test';
 		}
 		else if ($_POST['filtre']=="Legumes"){
-			$sql="SELECT nom_a AS title FROM articles WHERE (nom_a LIKE ? AND type_a == 1) OR description_a LIKE ?";
+			$sql="SELECT nom_a AS title FROM articles WHERE (nom_a LIKE '$test' AND type_a == 1) OR description_a LIKE $test";
 		}
 		// connexion à la base de donnée 
 		include('connect_db.php');
