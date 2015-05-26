@@ -1,6 +1,6 @@
 <?php 
 		if(isset($_SESSION["identifiant_u"])){
-			echo "<li><h3>Bonjour ".$_SESSION['identifiant_u']."</h3>";
+			echo "<li>Bonjour ".$_SESSION['identifiant_u']." ";
             echo '</br>';
             echo '<ul>';
             // On affiche un lien pour fermer notre session
