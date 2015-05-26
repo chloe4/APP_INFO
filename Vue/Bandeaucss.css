@@ -6,14 +6,8 @@
 
 /*titre*/
 
-
-h1,h2,h3,h4,h5,p,#liste2,#description,#footer{font-family: 'Lato', cursive; color:black;}
-
-h1,h2,h4,h5,p,#liste2,#description,#footer{font-family: 'Satisfy', cursive; color:black;}
-
-
-h3{font-family: 'Satisfy', cursive; color:white;}
-
+h1,h2,h3,h4,h5,p,#liste2,#description,#footer{font-family: 'Satisfy', cursive; color:black;}
+h3{color:white;}
 h1{font-size:30px;}
 h2{font-size: 40px; text-align:center;}
 h3{font-size:30px; text-align:center;}
@@ -48,11 +42,10 @@ p{font-size:18px;}
 ul{font-size:15px;}
 
 
-
 /* partie positionnement et déco */
 #menu a { display:block; color: #fff; text-decoration:none;}
 #menu > li, #menu > li li {
-	font-family: 'Lato', cursive; font-size:0.8em ;
+	font-family: 'Satisfy', cursive; font-size:0.8em ;
 	position: relative; display:inline-block;
 	width: 110px; padding: 6px 15px;
 	background-color: #000; /*background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);*/
@@ -73,7 +66,6 @@ ul{font-size:15px;}
 	overflow:hidden;
 	transition: 1s max-height 0.3s;
 	border-radius: 0 0 8px 8px;
-
 }
 
 /* ici on change la valeur de max-height au :hover */ /* need an adaptation, lower is better, but see it large  ;)  */
@@ -85,19 +77,11 @@ ul{font-size:15px;}
  /*la taille des images*/
 img{width:200px; height:150px;}
 
-/* style du tableau3*3 
-table,td{border: 2px solid #331f1d; }*/
-
 /* fond */
 
 #fond{background-repeat:no-repeat; background-image:url(Images_Deco/miam.jpg); background-size: cover; text-align:center;}
 
-/*#logo{width:100px; height:50px;}*/
-
-#container{
-	width: 100%;
-	font-size: 100%;
-}
+#container{width: 100%; font-size: 100%;}
 
 #trait{border-top : 1px solid #000; width : 500px;}
 
@@ -113,12 +97,9 @@ section {
 	padding-bottom:50px;
 	border-radius:50px;
 }
-#prod {
-	list-style-type: none;
-}
-#mesproducteursfavoris {
-	margin-bottom:18em;
-}
+#prod {list-style-type: none;}
+
+
 nav {
 	background-color:rgba(0,97,11,0.5);
 	padding-top:5px;
@@ -126,17 +107,11 @@ nav {
 	width:110%;
 	margin-left: -10px;
 	}
-#logo {
-	left:0;
+
+
+#logo2{height:auto; width:120px;left:0;
 	position:absolute;
-	margin-top:8px;
-	
-	
-}
-#logo2{
-	height:auto;
-	width:120px;
-	
+	margin-top:8px;}
 
 
 #div_horloge{
@@ -144,6 +119,4 @@ nav {
 	font-family: 'Satisfy', cursive; 
 	color:black;
 	font-size:30px;
-
-
 }
