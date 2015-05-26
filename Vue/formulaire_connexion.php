@@ -10,7 +10,7 @@
         vers la base de données-->
         <?php include('C:\wamp\www\APP_INFO\Modele\connexion_php.php'); ?>
 
-        <form action="formulaire_inscription.php" method="post">
+        <form action="" method="post">
             <p> Si vous n'êtes pas inscrit , créez votre compte
             <input type="submit" name="envoyer" Value="s'inscrire"/></br></p>
             <!--On définit tous les champs nécessaires à la connexion-->
