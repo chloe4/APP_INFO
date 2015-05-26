@@ -11,9 +11,7 @@
 
 
 <!-- tableau taille 5*2 avec des images -->	
-			<center><table border="0px">
-
-
+			<center><table border="0px"><thead>
 
 <th colspan="2"><p>Pour commencer : un fruit ou un légume ? </p></th>
 				</thead>	
