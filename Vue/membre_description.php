@@ -21,34 +21,6 @@
 				<input type="checkbox" name="nom_a" /> <label for="pomme de terre">Pomme de terre</label><input type="number" value="1" max="50" min="0" step="1"><br />
 	   		</p>
 	   		
-        <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
-        vers la base de données-->
-        <?php include('ajout_php.php'); ?>
-
-        <!--On définit tous les champs nécessaires à l'ajout de fruits et de légumes-->
-        <form action="Nos_produits.php" method="post">
-           
-            Article : <input type="text" name="nom_a" /></br>
-            Variété : <input type="text" name="varietes_a" /></br>
-            Type de produit ! 
-            Commentaires : <input type="text" name="commentaires_a" /></br>
-                 
-            <!--On définit un bouton permettant d'envoyer les informations-->
-            <input type="submit" name="envoyer" Value="Ajout d'article"/></br>
-            
-        </form>
-    
-
-        <?php 
-            include('bandeau_bas.php'); 
-        ?>
-
-    </html>
-
-
-
-
-
 	   		<!--Petite description sur la personne-->
 			<form method="post" action="section_membre.php">
 		   		<p>

@@ -6,8 +6,13 @@
 
 /*titre*/
 
+<<<<<<< HEAD
 h1,h2,h3,h4,h5,p,#liste2,#description,footer{font-family: 'Lato', cursive; color:black;}
+=======
+h1,h2,h4,h5,p,#liste2,#description,#footer{font-family: 'Satisfy', cursive; color:black;}
+>>>>>>> origin/master
 
+h3{font-family: 'Satisfy', cursive; color:white;}
 
 h1{font-size:30px;}
 h2{font-size: 40px; text-align:center;}
@@ -39,7 +44,7 @@ footer{
 }
 
 /*corps du texte*/
-p{font-size:30px;}
+p{font-size:18px;}
 ul{font-size:15px;}
 
 
@@ -77,18 +82,28 @@ ul{font-size:15px;}
 /*items pour fruits/légumes */
 #liste2{font-size: 13px;}
 
-/* la taille des images*/
-img{width:170px; height:170px;}
+ /*la taille des images*/
+img{width:200px; height:150px;}
 
-/* style du tableau3*3 */
-table,td{border: 2px solid #331f1d; margin-left:300px;}
+/* style du tableau3*3 
+table,td{border: 2px solid #331f1d; }*/
 
 /* fond */
+<<<<<<< HEAD
 #fond{background-repeat:no-repeat; background-image:url(miam.jpg); background-size: cover; text-align:center;}
+=======
+#fond{background-repeat:no-repeat; background-image:url(Images_Deco/fond_ecran_qui_plait_a_alice.jpg); background-size: cover; text-align:center;}
+>>>>>>> origin/master
 
 /*#logo{width:100px; height:50px;}*/
 
+#container{
+	width: 100%;
+	font-size: 100%;
+}
+
 #trait{border-top : 1px solid #000; width : 500px;}
+<<<<<<< HEAD
 /*Centrer le tableau d'accueil*/
 #centrer_tableau{
 	margin:0;
@@ -125,5 +140,14 @@ nav {
 	height:auto;
 	width:120px;
 	
+=======
+
+
+#div_horloge{
+	margin-left:58;
+	font-family: 'Satisfy', cursive; 
+	color:black;
+	font-size:30px;
+>>>>>>> origin/master
 
 }

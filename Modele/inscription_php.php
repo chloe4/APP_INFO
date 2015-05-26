@@ -39,7 +39,7 @@
 		catch(PDOException $e) {echo $e->getMessage();}
 
             $_SESSION['identifiant_u'] = $_POST['identifiant_u'];
-			    echo "<h3>".$_SESSION['identifiant_u'].", Vous êtes désormais inscrit sur <em>Jamais sans ma pomme</em></h3>";
+			    echo "<h1>".$_SESSION['identifiant_u'].", Vous êtes désormais inscrit sur <em>Jamais sans ma pomme</em></h1>";
                 echo '</br>';
     }
 
