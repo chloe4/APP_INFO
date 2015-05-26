@@ -6,7 +6,6 @@
 		<?php include('C:\wamp\www\APP_INFO\Modele\redirection.php'); ?>
 		<?php include('simpleuh.php'); ?>
 		
-<<<<<<< HEAD
 		<section id="mesproducteursfavoris">
 		<h1> Localisez vous </h1>
 		<div>
@@ -20,7 +19,7 @@
 			</ul>
 		</div>
 		</section>
-=======
+
 		<div id="mesproducteursfavoris">
 			<?php
 	 			$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
@@ -40,7 +39,7 @@
 	        	}
 			?>
 		</div>
->>>>>>> origin/master
+
 
 		<?php include('bandeau_bas.php'); ?>
 		

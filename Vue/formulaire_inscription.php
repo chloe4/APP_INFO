@@ -11,12 +11,12 @@
         <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
 
         <!--On définit tous les champs nécessaires à l'inscription-->
-<<<<<<< HEAD
+
         <section>
         <form action="" method="post">
-=======
+
         <form action="membre_description.php" method="post">
->>>>>>> origin/master
+
 
             <p> Nom : <input type="text" name="nom_u" /></br>
             Prénom : <input type="text" name="prenom_u" /></br>
