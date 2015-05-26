@@ -7,28 +7,31 @@
 		isset($_POST["prix_unitaire_lo"])
 		)
 	{
+		$quantite = $_POST["quantite_initiale_lo"];
+		$prix = $_POST["prix_unitaire_lo"];
 		// On se connecte à la base de données via la fonction PDO
 		$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
 		$id = $_SESSION['identifiant_u'];
 
 		$sqlprod = "SELECT reference_a FROM articles WHERE nom_a = :nom_a AND varietes_a = :varietes_a";
 		$requestprod = $db->prepare($sqlprod);
-        $requestprod->execute(array("reference_a"=>""));
+        $requestprod->execute(array("varietes_a"=>"", "nom_a"=>""));
         $tableau = $requestprod->fetch();
         $ref = $tableau["reference_a"];
+        echo $tableau["varietes_a"];
 
 
 		$sql = "INSERT INTO `jsmp`.`offre` (`identifiant_u`, `quantite_initiale_lo`, `prix_unitaire_lo`,`reference_a`) VALUES ('$id', :quantite_initiale_lo, :prix_unitaire_lo, '$ref')";
 		$request = $db->prepare($sql);
 		$request->execute(array(
-			"identifiant_u" => $id,
-			"quantite_initiale_lo" => $_POST["quantite_initiale_lo"],
-			"prix_unitaire_lo" => $_POST["prix_unitaire_lo"],
-			"reference_a" => $ref,
+			':identifiant_u' => $id,
+			':quantite_initiale_lo' => $quantite,
+			':prix_unitaire_lo' => $prix,
+			':reference_a' => $ref
 		));
 
 			echo "<h3>Votre offre a bien été enregistrée.</h3>";
-            echo '</br>';
+             echo $ref;
     }
 
 	
