@@ -1,10 +1,9 @@
 <?php 
 		if(isset($_SESSION["identifiant_u"])){
-			echo "<li><h3>Bonjour ".$_SESSION['identifiant_u']."</h3>";
-            echo '</br>';
+			echo "<li>Bonjour ".$_SESSION['identifiant_u']."";
             echo '<ul>';
             // On affiche un lien pour fermer notre session
-            echo '<h1><a href="deconnexion.php">Déconnexion</a></h1>';
-            echo '<h1><a href="page_faire_offre.php">Offre</a></h1>';
+            echo '<li><a href="deconnexion.php">Déconnexion</a></li>';
+            echo '<li><a href="page_faire_offre.php">Offre</a></li>';
             echo '</ul></li>';}
             ?>
