@@ -12,7 +12,7 @@
 			<div id="container">
 			<header>
 				<div id="logo">
-					<a href="Bandeau.php"><img id="logo2"src="Images_Deco/Logo.png"></a>
+					<a href="Bandeau.php"><img id="logo2"src="Logo2.png"></a>
 				</div>
 		<nav>
 			<ul id="menu">
@@ -30,11 +30,8 @@
 				<li><a href="formulaire_inscription.php">S'inscrire</a>
 
 				</li>
-				<li><a href="#"><?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?>Se connecter</a>
-					<ul>
-						<li><a href="panier.php">Remplir le panier</a></li>
-						<li><a href="#">Etat de mon panier</a></li>	
-					</ul>
+				<li><a href="formulaire_connexion.php">Se connecter</a>
+					
 				</li>
 
 				</li> 
