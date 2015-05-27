@@ -18,13 +18,8 @@
         
           <?php include('C:\wamp\www\APP_INFO\Modele\liste_bdd.php'); ?>
         
-           <p> Type de produit :<select name="type_a" id="type">
-                                    <option value="fruit">Fruit</option>
-                                    <option value="legume">Légumes</option>
-                                </select></br>
-                Nom du produit : <input type="checkbox" name="nom_a" />Banane</br>
+           <p>  Nom du produit : <input type="checkbox" name="nom_a" />Banane</br>
                 Quantité : <input type="number" value="1" max="50" min="0" step="1" name="quantite_initiale_lo"><br />
-                Variété du produit : <input type="int" name="varietes_a" /></br>
                 Prix : <input type="number" value="1" max="50" min="0" step="0,25" name="prix_unitaire_lo"><br />
                 Commentaire sur le produit : <input type="text" name="description_a" /></br>
             </p>

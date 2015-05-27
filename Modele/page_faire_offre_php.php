@@ -13,12 +13,12 @@
 		include('connect_db.php');
 		$id = $_SESSION['identifiant_u'];
 
-		$sqlprod = "SELECT reference_a FROM articles WHERE nom_a = :nom_a AND varietes_a = :varietes_a";
+		$sqlprod = "SELECT reference_a FROM articles WHERE nom_a = :nom_a";
 		$requestprod = $db->prepare($sqlprod);
-        $requestprod->execute(array("varietes_a"=>"", "nom_a"=>""));
+        $requestprod->execute(array("nom_a"=>""));
         $tableau = $requestprod->fetch();
         $ref = $tableau["reference_a"];
-        echo $tableau["varietes_a"];
+        echo $ref;
 
 
 		$sql = "INSERT INTO `jsmp`.`offre` (`identifiant_u`, `quantite_initiale_lo`, `prix_unitaire_lo`,`reference_a`) VALUES ('$id', :quantite_initiale_lo, :prix_unitaire_lo, '$ref')";
