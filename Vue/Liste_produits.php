@@ -5,6 +5,7 @@
 		<?php 
 			include('simpleuh.php'); 
 		 	include('C:\wamp\www\APP_INFO\Modele\connect_db.php') ?>
+		 	<h1>Liste des produits</h1>
 		<?php
 	        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
