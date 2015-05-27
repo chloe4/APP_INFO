@@ -15,7 +15,7 @@
 
 		$sqlprod = "SELECT reference_a FROM articles WHERE nom_a = :nom_a";
 		$requestprod = $db->prepare($sqlprod);
-        $requestprod->execute(array("nom_a"=>""));
+        $requestprod->execute(array("reference_a"=>""));
         $tableau = $requestprod->fetch();
         $ref = $tableau["reference_a"];
         echo $ref;
@@ -24,13 +24,13 @@
 		$sql = "INSERT INTO `jsmp`.`offre` (`identifiant_u`, `quantite_initiale_lo`, `prix_unitaire_lo`,`reference_a`) VALUES ('$id', :quantite_initiale_lo, :prix_unitaire_lo, '$ref')";
 		$request = $db->prepare($sql);
 		$request->execute(array(
-			':identifiant_u' => $id,
-			':quantite_initiale_lo' => $quantite,
-			':prix_unitaire_lo' => $prix,
-			':reference_a' => $ref
+			'identifiant_u' => $id,
+			'quantite_initiale_lo' => $quantite,
+			'prix_unitaire_lo' => $prix,
+			'reference_a' => $ref
 		));
 
-			echo "<h3>Votre offre a bien été enregistrée.</h3>";
+			echo "<h1>Votre offre a bien été enregistrée.</h1>";
              echo $ref;
     }
 
