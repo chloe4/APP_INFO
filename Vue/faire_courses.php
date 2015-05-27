@@ -7,7 +7,7 @@
 		<?php include('simpleuh.php'); ?>
 		
 		<section id="mesproducteursfavoris">
-			<h1> Localisez vous </h1>
+			<h1 a href="file:///C:/wamp/www/APP_INFO/Vue/carte.html"> Localisez vous </a></h1>
 			<div>
 				<h4> Liste des producteurs </h4>
 				<ul id="prod"> 	

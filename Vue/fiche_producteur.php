@@ -14,7 +14,7 @@
 			
 <center><img id="producteur" src ="Images_Deco/profil.jpg"/></center>
 <p>Bonjour</p>
-<p>productrice depuis mon plus jeune âge, je m'occupe de tous les fruits et légumes que je cultive : <br> </p>
+<p>Producteur depuis mon plus jeune âge, je m'occupe de tous les fruits et légumes que je cultive : <br> </p>
 
 <p>Mes produits</p></br>
 <img src="enveloppe.png"/>
