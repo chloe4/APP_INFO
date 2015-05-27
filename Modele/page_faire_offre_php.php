@@ -20,6 +20,7 @@ echo $id;
         $tableau = $requestprod->fetch();
         $ref = $tableau["nom_a"];
 
+		$sql = "INSERT INTO `jsmp`.`offre` (`id_ligne_offre`,`identifiant_u`, `quantite_initiale_lo`, `prix_unitaire_lo`,`nom_a`) VALUES ('','".$id."', '".$quantite."', '".$prix."', '".$ref."')";
 		$request = $db->prepare($sql);
 		$request->execute(array(
 			'identifiant_u' => $id,
