@@ -8,12 +8,10 @@
 	{
 		$quantite = $_POST["quantite_initiale_lo"];
 		$prix = $_POST["prix_unitaire_lo"];
-		echo $prix;
-		echo $quantite;
 		// On se connecte à la base de données via la fonction PDO
 		include('connect_db.php');
 		$id = $_SESSION['identifiant_u'];
-echo $id;
+
 		$sqlprod = "SELECT nom_a FROM articles";
 		$requestprod = $db->prepare($sqlprod);
         $requestprod->execute(array("nom_a"=>""));
@@ -30,7 +28,7 @@ echo $id;
 		));
 
 			echo "<h1>Votre offre a bien été enregistrée.</h1>";
-             echo $ref;
+
     }
 
 	

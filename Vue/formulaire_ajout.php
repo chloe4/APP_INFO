@@ -13,12 +13,7 @@
         <!--On définit tous les champs nécessaires à l'ajout de fruits et de légumes-->
         <form action="" method="post">
            
-            <p> Type de produit :<select name="type_a" id="type">
-                                    <option value="fruit">Fruit</option>
-                                    <option value="legume">Légumes</option>
-                                </select></br>
-                Nom du produit : <input type="text" name="nom_a" /></br>
-                Variété du produit : <input type="int" name="varietes_a" /></br>
+            <p> Nom du produit : <input type="text" name="nom_a" /></br>
                 Commentaire sur le produit : <input type="text" name="description_a" /></br>
             </p>
                  

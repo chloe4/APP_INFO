@@ -4,10 +4,8 @@
 
 		<?php 
 			include('simpleuh.php'); 
-		?>
-
+		 	include('C:\wamp\www\APP_INFO\Modele\connect_db.php') ?>
 		<?php
- 			$db = new PDO('mysql:host=localhost;dbname=jsmp;charset=utf8','root','root');
 	        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	        // On selectionne les données dont on a besoin, c'est-à-dire le mot de passe et le pseudo de l'utilisateur
@@ -26,7 +24,5 @@
 
 		<p><a href="formulaire_ajout.php">Ajouter un produit</p> 
 	
-				<?php 
-				include('bandeau_bas.php'); 
-	 		?>
-</html>
+		<?php include('bandeau_bas.php'); ?>
+	</html>
