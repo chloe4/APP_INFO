@@ -16,8 +16,8 @@
 <p>Bonjour</p>
 <p>Producteur depuis mon plus jeune âge, je m'occupe de tous les fruits et légumes que je cultive : <br> </p>
 
-<p>Mes produits</p></br>
-<img src="enveloppe.png"/>
+<p><a href="page_offre.php"/>Mes offres</p></br>
+<img src="Images_Deco/enveloppe.png"/>
 <p>Me contacter par mail : <?php echo "<a href=\"www.gmail.com/intl/fr/mail/help/about.html#inbox\">".$email."</a>"; ?> </p>
 
 	<?php include('bandeau_bas.php'); ?>
