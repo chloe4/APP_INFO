@@ -1,8 +1,8 @@
 <?php
     if(isset($_GET["id"])){
-        $produit = $_GET["id"];
+   		$produit = $_GET["id"];
 
-        include('connect_db.php');
+		include('connect_db.php');
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         if(isset($_SESSION['identifiant_u'])){

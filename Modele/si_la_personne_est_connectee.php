@@ -1,6 +1,6 @@
 <?php 
-		if(isset($_SESSION["identifiant_u"])){
-			echo "<li>Bonjour ".$_SESSION['identifiant_u']." ";
+	if(isset($_SESSION["identifiant_u"])){
+		echo "<li>Bonjour ".$_SESSION['identifiant_u']." ";
             echo '</br>';
             echo '<ul>';
             // On affiche un lien pour fermer notre session            
@@ -9,4 +9,4 @@
             echo '<li><a href="membre_description.php">Modifier profil</a></li>';
             echo '<li><a href="deconnexion.php">Déconnexion</a></li>';
             echo '</ul></li>';}
-            ?>
+      ?>
