@@ -5,7 +5,7 @@
 
 		<?php include('simpleuh.php'); ?>
 							
-			<h2>Espace administrateur</h2>
+			<h2>Espace administrateur</h2>w
 			<h3>So fresh , so French! </h3>
 
 			<p><strong>Administration Système</strong></br>
