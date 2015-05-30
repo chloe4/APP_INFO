@@ -14,8 +14,8 @@
 	    		echo "<p>Bonjour, je m'appelle " .$prenom."  ".$nom. " et j'habite à ".$localisation. ".</br>";
 	    		echo "Vous pouvez me joindre sur mon téléphone : 0".$telephone. "</p>" ;
 			?>
-
-			<p><a href="page_offre.php"/>Mes offres</a></p></br>
+			<p><?php echo "<a href=\"page_offre.php?id=$identifiant\">Mes offres</a></br>"; ?></p>
+	
 			<img src="Images_Deco/enveloppe.png"/>
 			<p>Me contacter par mail : 
 				<?php echo "<a href=\"www.gmail.com/intl/fr/mail/help/about.html#inbox\">".$email."</a>"; ?> 
@@ -27,7 +27,6 @@
 						echo "<p><a href =\"page_faire_offre.php\"/>Faire une offre</a></p>";
 						echo "<p><a href =\"membre_description.php\"/>Modifier mon profil</a></p></br>";
 					}
-
 				}
 				//taimzou<3
 			?>

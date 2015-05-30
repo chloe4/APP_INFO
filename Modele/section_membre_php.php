@@ -12,6 +12,7 @@
     $request->execute(array("nom_u"));
     while ($tableau = $request->fetch()){
         $prenom = $tableau['prenom_u'];
+        $identifiant = $tableau['identifiant_u'];
         $nom = $tableau['nom_u'];
         $localisation = $tableau['localisation_u'];
         $telephone = $tableau['telephone_u'];

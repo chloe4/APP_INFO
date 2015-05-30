@@ -5,12 +5,12 @@
 		<?php 
 			include('simpleuh.php'); 
 		?>
-<h1>Mes offres</h1>
+		<h1>Votre offre a bien été enregistrée</h1>
+		
 		<?php
  			include('C:\wamp\www\APP_INFO\Modele\connect_db.php');
 	        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	        // On selectionne les données dont on a besoin, c'est-à-dire le mot de passe et le pseudo de l'utilisateur
 	        $sql = "SELECT * FROM offre";
 	        // Pas la peine de préparer la requête, pas de données récupéré depuis l'utilisateur
 	        // Du coup "query" directement
@@ -22,23 +22,18 @@
  				$ref = $tableau['identifiant_u'];
  				$nom = $tableau['nom_a'];
  				$quantite = $tableau['quantite_initiale_lo'];
- 				$prix = $tableau['prix_unitaire_lo'];
-
- 				if($ref==$_GET['id']){
-	        		echo "Utilisateur : ".$ref."    ------    ";
-	        		echo "Produit : ".$nom."    ------    ";
-	        		echo "Quantité : ".$quantite."    ------    ";
-	        		echo "Prix unitaire : ".$prix."</br>";
-        			if($ref!=$_SESSION['identifiant_u']){
-
-        				
-        				echo 	'<form action="javascript.php" method="post">
-        							<input type="submit" name="redirection" Value="Acheter ce produit"/>
-       							</form></br>';
-       				}
-        		}
-        			
+ 				$prix = $tableau['prix_unitaire_lo'];		
         	}
+			
+			$sqldem = "INSERT INTO demande (`nom_a`,`identifiant_u`,`montant_d`,`quantite_d`) VALUES ('".$nom."','".$ref."','".$prix."','".$quantite."')";
+			$requestdem = $db->prepare($sqldem);
+			$requestdem->execute(array(
+				'nom_a' =>$nom,
+				'identifiant_u' => $ref,
+				'montant_d'=> $quantite, 
+				'quantite_d'=>$prix
+				));
+
 		?>
 	</br>
 				<?php 

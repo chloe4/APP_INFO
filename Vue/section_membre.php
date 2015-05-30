@@ -15,7 +15,7 @@
                 echo "<p> Vous pouvez me joindre sur mon téléphone : 0".$telephone. "</p>" ;
             ?>
 
-            <p><a href ="page_offre.php"/>Mes offres</a></p>
+            <p><?php echo "<a href=\"page_offre.php?id=$identifiant\">Mes offres</a></br>"; ?></p>
             <p><a href ="page_faire_offre.php"/>Faire une offre</a></p>
             </br>
             <img src="Images_Deco/enveloppe.png"/>
