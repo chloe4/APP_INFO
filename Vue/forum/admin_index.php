@@ -11,7 +11,7 @@ define('PUN_ADMIN_CONSOLE', 1);
 
 define('PUN_ROOT', dirname(__FILE__).'/');
 require PUN_ROOT.'include/common.php';
-require PUN_ROOT.'include/common_admin.php';
+//require PUN_ROOT.'include/common_admin.php';
 
 
 if (!$pun_user['is_admmod'])
@@ -34,7 +34,7 @@ if ($action == 'check_upgrade')
 
 	if (version_compare($pun_config['o_cur_version'], $latest_version, '>='))
 		message($lang_admin_index['Running latest version message']);
-	else
+	//else
 		message(sprintf($lang_admin_index['New version available message'], '<a href="http://fluxbb.org/">FluxBB.org</a>'));
 }
 // Remove install.php
