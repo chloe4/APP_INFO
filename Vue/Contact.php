@@ -17,7 +17,7 @@
 		<div><!--les images cliquables-->
 			<center>
 				<p>Vous pouvez nous contacter par mail </p>
-				<img src="Images_Deco/enveloppe.png"/>
+				<a href="email.php"><img src="Images_Deco/enveloppe.png"/></a>
 			<p> OU BIEN </p>
 			<p>Vous pouvez nous contacter en nous appelant</p>	<img src="Images_Deco/telephone.jpg"/>
 		</center>

@@ -11,7 +11,7 @@
         <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
 
         <!--On définit tous les champs nécessaires à lsa page membre-->
-<center><form method="post" action="panier.php">
+<center><form method="post" action="liste_producteurs.php">
 
 
   <!--QUantité du produit -->
@@ -38,8 +38,7 @@
     <p> Option 2 :</p>
     <p>  <a href="carte.html">Géolocalisez-vous</a></p>   
 
-            <input type="submit" value="Ajouter au panier"/>
-        
+        <input type="submit" value="Suivant"/></br>
             
         </form></center>
     
