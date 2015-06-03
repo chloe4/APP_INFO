@@ -17,7 +17,9 @@
 		</center>
 		<p><?php echo $description;?></p>
 
-		<center><a href="Acheter_Echanger.php"><input type ="submit" value="Sélectionner"></a>
+		<center><a href="Acheter_Echanger.php">
+		
+			<input type ="submit" value="Sélectionner"></a>
 		</center>
 
 		

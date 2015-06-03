@@ -3,8 +3,6 @@
 
 	<html>
 
-		<?php include('C:\wamp\www\APP_INFO\Modele\recherche_php.php'); ?>
-
 		<?php include('simpleuh.php');?>
 
 		<form action=" " method="post">
@@ -17,11 +15,10 @@
 			<option value="Blog">Blog </option>
 			<option value="Pages">Pages </option>-->
 			<input type ="submit" value="Rechercher"></center>
-		</form>
+		</form></br>
+
+		<?php include('C:\wamp\www\APP_INFO\Modele\recherche_php.php'); ?> </br>
 		
-		<?php 
-			echo $resultats;
-		?>
 		
 		<?php 
 			include('bandeau_bas.php'); 

@@ -1,46 +1,33 @@
 <?php
 //Initialisation de la variable contenant les résultats
-	$resultats="";
-	//$nbreParametres=1;// nbr de para à renseigner 
+	$resultats=""; 
 	if(isset($_POST['query'])&& !empty($_POST['query'])){// traiter requète
 		//si l'utilisateur rentre qqchose on traite sa requete
 		//on rend clean la requète de l'utilisateur 
 		//$query = preg_replace("#[^a-z ?0-9]#i","",$_POST['query']);
 		$test = htmlspecialchars($_POST['query']);
-		//if($_POST['filtre']=="Site entier"){
-			//$sql="(SELECT nom_a AS title FROM articles WHERE (nom_a LIKE '$test' AND type_a == 0) OR description_a LIKE '$test') UNION 
-			//(SELECT nom_a AS title FROM articles WHERE (nom_a LIKE '$test' AND type_a == 1) OR description_a LIKE '$test')";
-
-			// SELECT...FROM ect : recherche champ
-		//} 
-		//else if($_POST['filtre']=="Fruit"){
-		//}
-		//else if ($_POST['filtre']=="Legumes"){
-		//	$sql="SELECT nom_a AS title FROM articles WHERE (nom_a LIKE '$test' AND type_a == 1) OR description_a LIKE $test";
-		//}
+		
 		// connexion à la base de donnée 
 		$db = new PDO("mysql:host=localhost;dbname=jsmp","root","");
 		$db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-		$sql='SELECT COUNT(nom_a) FROM articles WHERE nom_a LIKE "%$test%" ';
-
-		$req = $db->query($sql);
-		// prépare requète à l'éxécution & retourne un objet 
+		$sql="SELECT COUNT(nom_a) FROM articles WHERE nom_a LIKE '%".$test."%' ";
 		
-		/*if($nbreParametres==3){
-			$req->execute(array('%'.$query.'%','%'.$query.'%','%'.$query.'%','%'.$query.'%'));
-		}
-		else {
-			$req->execute(array('%'.$query.'%','%'.$query.'%','%'.$query.'%','%'.$query.'%'));
-		}*/
+		// prépare requète à l'éxécution & retourne un objet 
+		$req = $db->prepare($sql);
+		$req->execute(array('%'.$test.'%'));
+		
 		$count = $req->fetchColumn();// Count: fonction d'agrégation ; compte nombre de valeurs  
 		if($count >=0){
-			echo "a";
-			echo "".$count. "résultat(s) trouvé(s) pour <strong>".$test."</strong><hr/>";
-    		while ($resultats=$req->fetch(PDO::FETCH_OBJ)){
-    			// PDO : PHP Data Object : classe définissant une interface pour accéder à une base de données depuis PHP .
-    			//PDO::FETCH_OBJ: returns an anonymous object with property names that correspond to the column names returned in your result set 
-    			echo '# - Titre:'.$resultats.'<br/>';
-    		}
+			echo "".$count. " résultat(s) trouvé(s) pour <strong>".$test."</strong><hr/>";
+		    		
+			$sql2="SELECT nom_a FROM articles WHERE nom_a LIKE '%".$test."%' ";
+			$req2 = $db->prepare($sql2);
+			$req2->execute(array('%'.$test.'%'));
+
+	    	while($resultats=$req2->fetch()){
+	    		$id=$resultats['nom_a'];
+	    		echo "<a href=\"section_produit.php?id=$id\">".$resultats['nom_a']."</a><br/>";
+	    	}
 		}
 		else {
 			echo"0 résultat trouvé pour <strong>".$test."</strong><hr/>";
