@@ -4,15 +4,18 @@
 
     <html>
 
-        <?php include('simpleuh.php'); ?>
-
-        <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
-        vers la base de données-->
-        <?php include('C:\wamp\www\APP_INFO\Modele\connexion_php.php'); ?>
-
+        <?php
+            include('simpleuh.php');
+            include('C:\wamp\www\APP_INFO\Modele\connexion_php.php'); 
+            if(isset($_SESSION["identifiant_u"])){
+                echo "<h1>Vous êtes déjà connecté ! </h1></br>";
+            }
+            else{
+        ?>
+        <section></br>
         <form action="formulaire_inscription.php" method="post">
-            <p> Si vous n'êtes pas inscrit , créez votre compte
-            <input type="submit" name="envoyer" Value="s'inscrire"/></br></p>
+            <p> Si vous n'êtes pas inscrit , créez votre compte : 
+            <input type="submit" name="envoyer" Value="S'inscrire"/></br></p>
             <!--On définit tous les champs nécessaires à la connexion-->
         </form>
 
@@ -23,7 +26,8 @@
             <!--On définit un bouton permettant d'envoyer les informations-->
             <input type="submit" name="envoyer" Value="Se connecter"/></br>
         </form>
-        
+        </section>
+        <?php } ?>
         <?php include('bandeau_bas.php'); ?>
 
     </html>

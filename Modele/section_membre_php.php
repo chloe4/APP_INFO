@@ -17,5 +17,6 @@
         $localisation = $tableau['localisation_u'];
         $telephone = $tableau['telephone_u'];
         $email = $tableau['email_u'];
+        $type = $tableau['type_u'];
     }
 ?>

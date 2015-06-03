@@ -30,7 +30,6 @@
             }
             else { //Vous avez été reconnu, nous pouvons démarrer la session
                 $_SESSION['identifiant_u'] = $pseudo;
-                echo "<h1>".$pseudo.", Vous êtes bien connecté.</h1>";
             	
             }
     }

@@ -5,10 +5,17 @@
     <html>
 
         <?php include('simpleuh.php'); ?>
-
+        <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
+      <?php 
+        if(isset($_SESSION["identifiant_u"])){
+          echo "<h1>Vous êtes connecté ! </h1></br>";
+        }
+        else{
+        
+  ?>
         <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
         vers la base de données-->
-        <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
+       
 
         <!--On définit tous les champs nécessaires à l'inscription-->
 
@@ -63,6 +70,7 @@
         </form>
         </section>
     
+    <?php } ?>
         <?php include('bandeau_bas.php'); ?>
 
     </html>
