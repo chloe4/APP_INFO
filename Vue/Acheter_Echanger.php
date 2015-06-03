@@ -38,7 +38,7 @@
     <p> Option 2 :</p>
     <p>  <a href="carte.html">Géolocalisez-vous</a></p>   
 
-            <input type="submit" value="Ajouter au panier"/>
+            <input type="submit" value="Ajouter "/>
         
             
         </form></center>

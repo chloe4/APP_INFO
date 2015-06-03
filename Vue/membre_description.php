@@ -4,33 +4,40 @@
 
     <html>
 
-        <?php include('simpleuh.php');  ?>
+        <?php include('simpleuh.php'); 
+        ?>
 
         <!--On connecte la page PHP avec la base de données via le fichier config.php / Toutes les informations écrites sur la page sont envoyées 
         vers la base de données-->
-        <?php include('C:\wamp\www\APP_INFO\Modele\inscription_php.php'); ?>
-        <?php include('C:\wamp\www\APP_INFO\Modele\ajout_php.php'); ?>
+        <?php include('C:\wamp\www\APP_INFO\Modele\modif.php'); ?>
+        <?php include('C:\wamp\www\APP_INFO\Modele\modifmdp.php'); ?>
+        <?php include('C:\wamp\www\APP_INFO\Modele\modifemail.php'); ?>
+        
+
+  
 
         <!--On définit tous les champs nécessaires à lsa page membre-->
-<h1> Page d'offre de Fruits & Légumes</h1>
-  <form action="Bandeau.php" method="post">
-           
-           <p> Type de produit :<select name="type_a" id="type">
-                                    <option value="fruit">Fruit</option>
-                                    <option value="legume">Légumes</option>
-                                </select></br>
-                Nom du produit : <input type="checkbox" name="nom_a" />Banane</br>
-                Quantité : <input type="number" value="1" max="50" min="0" step="1" name="id_o"><br />
-                Variété du produit : <input type="int" name="varietes_a" /></br>
-                Prix : <input type="number" value="1" max="50" min="0" step="0,25" name="montant_total_o"><br />
-                Commentaire sur le produit : <input type="text" name="description_a" /></br>
-            </p>
-                  
-            <!--On définit un bouton permettant d'envoyer les informations-->
-            <input type="submit" name="envoyer" Value="Ajout d'article"/>
+<h1> Modifier mon profil</h1>
+ 
+          <p>  
+<form method="post">
+    <p> Changer teléphone </p>
+    <input type="text" name="telephone_u">
+    <br/><br/>
+    <input type="submit" name="submit" value="Changer">
 
+    <p> Changer e-mail </p>
+    <input type="text" name="email_u">
+    <br/><br/>
+    <input type="submit" name="submit1" value="Changer">
 
-        	<input type="submit" value="Modifier" /></br>
+    <p> Changer mot de passe </p>
+    <input type="text" name="mot_passe_u">
+    <br/><br/>
+    <input type="submit" name="submit2" value="Changer">
+
+   
+
             
         </form>
     
