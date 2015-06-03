@@ -111,7 +111,7 @@ while ($cur_forum = $db->fetch_assoc($result))
 	$icon_type = 'icon';
 
 	// Are there new posts since our last visit?
-	if (isset($new_topics[$cur_forum['fid']]))
+	//if (isset($new_topics[$cur_forum['fid']]))
 	{
 		$item_status .= ' inew';
 		$forum_field_new = '<span class="newtext">[ <a href="search.php?action=show_new&amp;fid='.$cur_forum['fid'].'">'.$lang_common['New posts'].'</a> ]</span>';
@@ -197,7 +197,7 @@ if (!defined('PUN_USERS_INFO_LOADED'))
 	require FORUM_CACHE_DIR.'cache_users_info.php';
 }
 
-$result = $db->query('SELECT SUM(num_topics), SUM(num_posts) FROM '.$db->prefix.'forums') or error('Unable to fetch topic/post count', __FILE__, __LINE__, $db->error());
+//$result = $db->query('SELECT SUM(num_topics), SUM(num_posts) FROM '.$db->prefix.'forums') or error('Unable to fetch topic/post count', __FILE__, __LINE__, $db->error());
 list($stats['total_topics'], $stats['total_posts']) = array_map('intval', $db->fetch_row($result));
 
 if ($pun_user['g_view_users'] == '1')
@@ -239,7 +239,7 @@ if ($pun_config['o_users_online'] == '1')
 	// Fetch users online info and generate strings for output
 	$num_guests = 0;
 	$users = array();
-	$result = $db->query('SELECT user_id, ident FROM '.$db->prefix.'online WHERE idle=0 ORDER BY ident', true) or error('Unable to fetch online list', __FILE__, __LINE__, $db->error());
+	//$result = $db->query('SELECT user_id, ident FROM '.$db->prefix.'online WHERE idle=0 ORDER BY ident', true) or error('Unable to fetch online list', __FILE__, __LINE__, $db->error());
 
 	while ($pun_user_online = $db->fetch_assoc($result))
 	{
