@@ -37,7 +37,7 @@ $pun_config = array (
   'o_topic_views' => '1',
   'o_quickjump' => '1',
   'o_gzip' => '0',
-  'o_additional_navlinks' => '0=<a href="http://localhost/APP_INFO//Vue/Bandeau.php">Accueil</a>',
+  'o_additional_navlinks' => '0=<a href="http://localhost/APP_INFO//Vue/Bandeau.php">Accueil JSMP</a>',
   'o_report_method' => '0',
   'o_regs_report' => '1',
   'o_default_email_setting' => '1',
