@@ -53,16 +53,14 @@
               </select>
           </p>
           
-          <!-- zone pour cocher truc d'utilisation & accepter (ou pas) de recevoir mail d'info
-           <form method="post" action="traitement.php">
+          
+           
    <p>
-       Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
-       <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
-       <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
-       <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
-       <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+       
+       <input type="checkbox" name="cgu" />J'accepte les <a href="CGU.php">conditions d'utilisations</a><br />
+       
    </p>
-</form> J'accepte les conditions d'utilisation -->
+</form> 
 
             <!--On définit un bouton permettant d'envoyer les informations-->
             <input type="submit" name="envoyer" Value="S'inscrire"/></br>
