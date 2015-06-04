@@ -13,8 +13,8 @@
         
         <form action="" method="post">
             <p>Nom du produit : <select name="nom_a" id="produit">
-                                    <?php include('C:\wamp\www\APP_INFO\Modele\liste_bdd.php'); ?>
-                                </select>
+                <?php include('C:\wamp\www\APP_INFO\Modele\liste_bdd.php'); ?>
+                </select>
             </p>
         
             <p> Quantité : <input type="number" value="1" max="50" min="0" step="1" name="quantite_initiale_lo"><br/>

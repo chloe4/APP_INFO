@@ -3,7 +3,6 @@ session_start();
 if (isset($_SESSION['identifiant_u'])){ ?>
     <script type="text/javascript">
 
-	    	confirm('Etes-vous sur de vouloir acheter ce produit ?');
 	    	if (confirm('Etes-vous sur de vouloir acheter ce produit ?')){
 	    		document.location.href="page_demande.php"; 
 			}
