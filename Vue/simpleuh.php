@@ -31,7 +31,6 @@
 							<li><a href="#">Etat de mon panier</a></li>	
 						</ul>
 					</li>
-					<li><a href="http://localhost/APP_INFO/vue/forum/index.php">Forum</a></li>
 					<li><a href="formulaire_inscription.php">S'inscrire</a></li>
 					<li><a href="formulaire_connexion.php">Se connecter</a></li> 
 					<?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?>
