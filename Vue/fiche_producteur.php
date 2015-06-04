@@ -18,7 +18,7 @@
 	
 			<img src="Images_Deco/enveloppe.png"/>
 			<p>Me contacter par mail : 
-				<?php echo "<a href=\"www.gmail.com/intl/fr/mail/help/about.html#inbox\">".$email."</a>"; ?> 
+				 <p>Me contacter par mail : <?php echo "<a href=\"mailto:$email\">".$email."</a>"; ?> </p> 
 			</p></br>
 
 			<?php

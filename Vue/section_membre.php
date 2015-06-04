@@ -19,7 +19,7 @@
             <p><a href ="page_faire_offre.php"/>Faire une offre</a></p></br>
             
             <img src="Images_Deco/enveloppe.png"/>
-            <p>Me contacter par mail : <?php echo "<a href=\"www.gmail.com/intl/fr/mail/help/about.html#inbox\">".$email."</a>"; ?> </p>
+            <p>Me contacter par mail : <?php echo "<a href=\"mailto:.'$email.'\">".$email."</a>"; ?> </p>
             <p><a href ="membre_description.php"/>Modifier mon profil</a></p>
             <?php 
                 if($type == "2"){
