@@ -20,8 +20,6 @@
 		<?php include('C:\wamp\www\APP_INFO\Modele\recherche_php.php'); ?> </br>
 		
 		
-		<?php 
-			include('bandeau_bas.php'); 
-		 ?>
+		<?php include('bandeau_bas.php'); ?>
 
 	</html>

@@ -8,7 +8,7 @@
             include('simpleuh.php');
             include('C:\wamp\www\APP_INFO\Modele\connexion_php.php'); 
             if(isset($_SESSION["identifiant_u"])){
-                echo "<h1>Vous êtes déjà connecté ! </h1></br>";
+                echo "<h1>Vous êtes connecté ! </h1></br>";
             }
             else{
         ?>

@@ -26,7 +26,7 @@
 					if ($_SESSION['identifiant_u'] == $identifiant){
 						echo "<p><a href =\"page_faire_offre.php\"/>Faire une offre</a></p>";
 						echo "<p><a href =\"membre_description.php\"/>Modifier mon profil</a></p></br>";
-						if($type_u == "2"){
+						if($type == "2"){
 							echo "<p><a href =\"administrateur.php\"/>Gestion du site</a></p>";
 						}
 					}

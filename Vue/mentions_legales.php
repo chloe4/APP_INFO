@@ -20,9 +20,9 @@
 				<li><h4>Modifications</h4>
 					<p>Les conditions d'utilisation peuvent être modifiées à tout moment par "Jamais sans ma pomme". En cas de modification, les données nouvelles entrent en vigueur à compter de leur mise en ligne.</p>
 				</li>
-				<li><h4>La protection des données personnelles </h4>
+				<li><h4>La protection des données personnelles</h4>
 					<ul>
-						<li><h4>Conservation des données personnelles </h4>
+						<li><h4>Conservation des données personnelles</h4>
 							<p>En application des dispositions de la loi Informatique et Libertés du 6 janvier 1978, "Jamais sans ma pomme" s'engage à ne pas divulguer aux tiers les informations communiquées par les Utilisateurs du site. Celles-ci sont confidentielles et ne seront utilisées par ses services internes que pour traiter les commandes et pour renforcer et personnaliser la communication notamment par des courriers.  "Jamais sans ma pomme" s'engage à mettre en oeliguvre les mesures techniques et d'organisation appropriées pour protéger les données à caractère personnel.  "Jamais sans ma pomme" s'engage à ne pas procéder à des traitements, de manière incompatible avec les finalités du Site, à ne pas publier, divulguer ou transmettre (à titre gratuit ou onéreux) d'informations concernant l'utilisateur, sans l'accord express et préalable de celui-ci. Toutefois, la société "Jamais sans ma pomme" pourra divulguer certaines informations afin de répondre aux demandes judiciaires et administratives. La responsabilité de "Jamais sans ma pomme" ne pourra être mise en cause de ce fait. Les données personnelles ne seront conservés par "Jamais sans ma pomme" pour une durée nécessaire à la réalisation des finalités pour lesquelles elles sont collectées ou traitées. </p>
 						</li>
 						<li><h4>Modification et rectification des données personnelles </h4>
