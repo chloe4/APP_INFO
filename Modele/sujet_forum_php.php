@@ -1,4 +1,13 @@
 
+
+<?php session_start(); ?>
+<!DOCTYPE html>
+  <html>
+
+    <?php include('simpleuh.php'); ?>
+
+    
+    <h1>Forum</h1>
 <?php
 $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
@@ -27,6 +36,8 @@ $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
                 </form></br>';
         }
         }           
- 
+ }
   
 ?>
+      <?php include('bandeau_bas.php'); ?>
+  </html>
