@@ -1,15 +1,32 @@
-<?php include('connect_db.php'); ?>
+
 <?php
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 
   // On selectionne les données dont on a besoin
-  $sql = "SELECT commentaire_u AND identifiant_u FROM utilisateur";
+  $sql = "SELECT * FROM forum";
    
-    $request = $db->prepare($sql);
+    $request = $db->query($sql);
     // On rentre ces données dans un tableau
-    $data->execute(array($request));
-
- echo "".$data["commentaire_u"]." ".$data["identifiant_u"]."</br>";
+            // On rentre ces données dans un tableau
+    $request->execute(array("identifiant_u", "sujet_f", "commentaire_f"));
+  while ($tableau = $request->fetch()){
+    $ref = $tableau['identifiant_u'];
+    $sujet = $tableau['sujet_f'];
+    $commentaire = $tableau['commentaire_f'];
     
+
+    if($ref==$_GET['id']){
+          echo "Utilisateur : ".$ref."   :  ";
+        echo "Sujet : ".$sujet."        ";
+          echo "Description : ".$commentaire."      ";
+    
+          if($ref!=$_SESSION['identifiant_u']){
+            echo  '<form action="javascript.php" method="post">
+                <input type="submit" name="redirection" Value="Commenter"/>
+                </form></br>';
+        }
+        }           
+ 
   
 ?>

@@ -1,18 +1,26 @@
 <?php
 
-	if (isset($_POST["commentaire_u"]))
+	if (isset($_POST["submit"]))
 	{
-		$commentaire = $_POST["commentaire_u"];
-		$id = $_SESSION['identifiant_u'];
-
-		// On se connecte à la base de données via la fonction PDO
 		$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
+		$sujet = $_POST["sujet_f"];
+		$commentaire=$_POST["commentaire_f"];
+		//$commentaire1=$_POST["commentaire_u"];// réponse au poste 
+		$id = $_SESSION['identifiant_u'];
+
+		
 		
 
-		$sql = "INSERT INTO utilisateur (`commentaire_u`)  VALUES '.$commentaire.' WHERE identifiant_u ='$id' ";
+		$sql = "INSERT INTO forum (`sujet_f`,`identifiant_u`,`commentaire_f`)  VALUES ('".$sujet."','".$id."','".$commentaire."')  ";
 		$request = $db->prepare($sql);
-		$request->execute(array(`commentaire_u` => $commentaire));
+		$request->execute(array(
+			'identifiant_u' => $id,
+			'sujet_f' => $sujet,
+			'commentaire_f' => $commentaire,
+			
+		));
+		
 		
 
 			echo "<h1>Votre sujet est enregistré.</h1>";

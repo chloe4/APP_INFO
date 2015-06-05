@@ -13,8 +13,13 @@
 
  			<form method="post">
 
-            <p>Ajouter un sujet : <input type="text" name="commentaire_u" /><input type="submit" name="submit" Value="Ajouter"/></p>
-            
+            <p>Ajouter un sujet : <input type="text" name="sujet_f" /></p>
+            <textarea name="commentaire_f" rows="10" cols="50">
+
+       Quelques précisions jeune pousse de bambou...
+
+       </textarea>   
+            <input type="submit" name="submit" Value="Ajouter"/>
             </form>
             
         	<p> <a href="sujet_forum.php"/>Voir les sujets existants </p>
