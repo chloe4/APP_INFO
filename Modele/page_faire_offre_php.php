@@ -3,7 +3,6 @@
 //Vérification si nom, prenom, datedenaissance, adresse, telephone, pseudo, mot de passe et email existe !
 	if (isset($_POST["nom_a"])&&
 		isset($_POST["quantite_initiale_lo"])&&
-		isset($_POST["nom_a"])&&
 		isset($_POST["prix_unitaire_lo"])
 		)
 	{

@@ -17,13 +17,13 @@
  		$prix = $tableau['prix_unitaire_lo'];
 
  		if($ref==$_GET['id']){
-	        echo "Utilisateur : ".$ref."    ------    ";
-	   		echo "Produit : ".$nom."    ------    ";
-	        echo "Quantité : ".$quantite."    ------    ";
+	        echo "Utilisateur : ".$ref."    vend   ";
+	   		echo "Produit : ".$nom."    pour    ";
+	        echo "Quantité : ".$quantite."    à    ";
 	   		echo "Prix unitaire : ".$prix."</br>";
        		if($ref!=$_SESSION['identifiant_u']){
         		echo 	'<form action="javascript.php" method="post">
-        				<input type="submit" name="redirection" Value="Acheter ce produit"/>
+        				<input type="submit" name="redirection" Value="Acheter/Echanger ce produit"/>
        					</form></br>';
    			}
         }     			

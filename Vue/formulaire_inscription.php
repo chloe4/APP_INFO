@@ -22,7 +22,7 @@
         <section>
         <form action="" method="post">
 
-        <form action="membre_description.php" method="post">
+        
 
 
             <p> Nom : <input type="text" name="nom_u" /></br>
@@ -60,7 +60,7 @@
        <input type="checkbox" name="cgu" />J'accepte les <a href="CGU.php">conditions d'utilisations</a><br />
        
    </p>
-</form> 
+
 
             <!--On définit un bouton permettant d'envoyer les informations-->
             <input type="submit" name="envoyer" Value="S'inscrire"/></br>

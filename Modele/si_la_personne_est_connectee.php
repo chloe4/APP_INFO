@@ -8,5 +8,9 @@
             echo '<li><a href="section_membre.php">Ma page</a></li>';
             echo '<li><a href="membre_description.php">Modifier profil</a></li>';
             echo '<li><a href="deconnexion.php">Déconnexion</a></li>';
+            echo'<li><a href="panier.php">Mon panier</a></li>';
+            echo'<li><a href="forum.php">Forum</a></li>';
+                                    
+                             
             echo '</ul></li>';}
       ?>

@@ -25,12 +25,8 @@
 							<li><a href="Liste_produits.php">Nos produits</a></li>		
 						</ul>
 					</li>
-					<li><a href="panier.php">Mon panier</a>
-						<ul>
-							<li><a href="panier.php">Remplir le panier</a></li>
-							<li><a href="#">Etat de mon panier</a></li>	
-						</ul>
-					</li>
+					
+					
 					<li><a href="formulaire_inscription.php">S'inscrire</a></li>
 					<li><a href="formulaire_connexion.php">Se connecter</a></li> 
 					<?php include('C:\wamp\www\APP_INFO\Modele\si_la_personne_est_connectee.php'); ?>

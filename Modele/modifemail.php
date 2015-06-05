@@ -6,7 +6,7 @@
  		$db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
 		$sql = " UPDATE utilisateur SET email_u = '$email' WHERE identifiant_u='$id' ";
- 		$request = $db->query($sql);
+ 		$request = $db->query($sql);//exécute une requête SQL en appelant une seule fonction
  	
  		echo "<h1>Modification enregistrée.</h1>";
  	}
