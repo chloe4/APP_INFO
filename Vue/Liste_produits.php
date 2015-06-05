@@ -6,7 +6,7 @@
 		
 		<h1>Liste des produits</h1>
 		<section>
-			<?php include('C:\wamp\www\APP_INFO\Modele\Liste_produits_php.php'); ?>
+			<?php include('..\Modele\Liste_produits_php.php'); ?>
 			<p><a href="formulaire_ajout.php">Ajouter un produit</a></p> 
 		</section>
 		<?php include('bandeau_bas.php'); ?>
