@@ -11,7 +11,7 @@
 
 		<center>
 			<h1><?php echo $nom; ?> </h1>
-			<img src="<?php echo $photo;?>">
+			<img src="<?php echo $photo; ?>">
 		</center>
 		<p><?php echo $description;?></p>
 

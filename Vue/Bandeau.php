@@ -21,7 +21,8 @@
 				</tbody>			
 			</table>
 		</center>
-			
+			</br>
+			<?php include('C:\wamp\www\APP_INFO\Modele\nouveautes_php.php'); ?>
 		<!--code pour horloge-->
 		<div id="div_horloge"></div>
  
