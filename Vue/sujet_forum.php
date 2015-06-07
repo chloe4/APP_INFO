@@ -26,9 +26,9 @@ $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
     $commentaire = $tableau['commentaire_f'];
 
     echo "<p/><strong>Sujet de</strong> :".$ref." <strong> sur : </strong>".$sujet." </br>";
-    echo"<a href='commenter_sujet.php'><input type='submit' name='submit' Value='Lire le sujet'/></a>";
- //echo "<strong>Commentaire</strong> : <p/>".$commentaire."  </br>    ";
-	   		
+    
+    echo "<strong>Commentaire</strong> : <p/>".$commentaire."  </br>    ";
+	   echo"<a href='commenter_sujet.php'><input type='submit' name='submit' Value='Commenter'/></a>";		
 
 
                  
