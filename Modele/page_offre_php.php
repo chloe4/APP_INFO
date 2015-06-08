@@ -23,7 +23,7 @@
 	   		echo "<strong>prix unitaire </strong>: ".$prix."</br>";
        		if($ref!=$_SESSION['identifiant_u']){
         		echo 	'<form action="javascript.php" method="post">
-        				<input type="submit" name="redirection" Value="S inscrire"/>
+        				<input type="submit" name="redirection" Value="Contacter le vendeur "/>
        					</form></br>';
    			}
         }     			
