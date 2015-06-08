@@ -8,7 +8,7 @@
 
     
     <h1>Forum</h1>
-    <nav>
+    <section>
 <?php
 $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
@@ -36,6 +36,6 @@ $db = new PDO("mysql:host=127.0.0.1;dbname=jsmp","root","");
  }
   
 ?>
-</nav>  
+</section>  
       <?php include('bandeau_bas.php'); ?>
   </html>
