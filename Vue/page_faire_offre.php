@@ -19,10 +19,10 @@
         
             <p> Quantité : <input type="number" value="1" max="50" min="0" step="1" name="quantite_initiale_lo"><br/>
                 Prix : <input type="number" value="1" max="50" min="0" step="0,25" name="prix_unitaire_lo"><br/>
-                Commentaire sur le produit : <input type="text" name="description_a" /></br>
+                
             </p>
             <!--On définit un bouton permettant d'envoyer les informations-->
-            <input type="submit" name="envoyer" Value="Faire une offre"/></br>
+            <input type="submit" name="submit" Value="Faire une offre"/></br>
             
         </form>
     

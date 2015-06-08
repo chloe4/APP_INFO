@@ -14,7 +14,7 @@
         <form action="" method="post">
            
             <p> Nom du produit : <input type="text" name="nom_a" /></br>
-                Commentaire sur le produit : <input type="text" name="description_a" /></br>
+                Commentaire sur le produit :<textarea name="description_a" rows="10" cols="50">... </textarea> </br>
             </p>
                  
             <!--On définit un bouton permettant d'envoyer les informations-->
